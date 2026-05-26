@@ -1,3 +1,11 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #7ad33e;
+  --color-border: #e4e4e7;
+  --color-surface: #f9fafb;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
