@@ -8,4 +8,7 @@ export interface AuthUser {
   name: string;
   email: string;
   token: string;
+  password: string;
 }
+
+export type AuthUserInsert = Omit<AuthUser, 'token' | 'id'>;

@@ -1,4 +1,4 @@
-import type { AuthUser, LoginPayload } from './types';
+import type { AuthUser, AuthUserInsert, LoginPayload } from './types';
 
 const TOKEN_KEY = 'auth_token';
 const USER_KEY = 'auth_user';
@@ -14,7 +14,7 @@ export const loginService = async (
 
   if (!response.ok) {
     const error = await response.json();
-    throw new Error(error.message ?? error ?? 'Erro ao fazer login.');
+    throw new Error(error.message ?? 'Erro ao fazer login.');
   }
 
   const { accessToken, user } = await response.json();
@@ -32,8 +32,8 @@ export const logoutService = (): void => {
 };
 
 export const registerService = async (
-  payload: LoginPayload,
-): Promise<AuthUser> => {
+  payload: AuthUserInsert,
+): Promise<AuthUserInsert> => {
   const response = await fetch('/api/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -42,10 +42,10 @@ export const registerService = async (
 
   if (!response.ok) {
     const { message } = await response.json();
-    throw new Error(message ?? 'Erro ao criar usuário');
+    throw new Error(message ?? 'Erro ao criar usuário.');
   }
 
-  const authUser: AuthUser = await response.json();
+  const authUser: AuthUserInsert = await response.json();
 
   return authUser;
 };
