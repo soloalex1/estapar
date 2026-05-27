@@ -1,5 +1,66 @@
 {
-  "garages": [],
+  "garages": [
+    {
+      "id": "1",
+      "name": "Garage 1",
+      "code": "000001",
+      "address": "Rua 1, 123",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": true
+    },
+    {
+      "id": "2",
+      "name": "Garage 2",
+      "code": "000002",
+      "address": "Rua 2, 456",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "regionalCode": "RJ1",
+      "isDigital": false
+    },
+    {
+      "id": "3",
+      "name": "Garage 3",
+      "code": "000003",
+      "address": "Rua 3, 789",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "regionalCode": "MG",
+      "isDigital": true
+    },
+    {
+      "id": "4",
+      "name": "Garage 4",
+      "code": "000004",
+      "address": "Rua 4, 101",
+      "city": "Salvador",
+      "state": "BA",
+      "regionalCode": "NE",
+      "isDigital": false
+    },
+    {
+      "id": "5",
+      "name": "Garage 5",
+      "code": "000005",
+      "address": "Rua 5, 202",
+      "city": "João Pessoa",
+      "state": "PB",
+      "regionalCode": "NE",
+      "isDigital": true
+    },
+    {
+      "id": "6",
+      "name": "Garage 6",
+      "code": "000006",
+      "address": "Rua 6, 303",
+      "city": "Fortaleza",
+      "state": "CE",
+      "regionalCode": "NE",
+      "isDigital": true
+    }
+  ],
   "users": [
     {
       "id": "1",
