@@ -8,3 +8,5 @@ export interface Garage {
   regionalCode: string;
   isDigital: boolean;
 }
+
+export type GarageInsert = Omit<Garage, 'id'>;

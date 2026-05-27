@@ -1,4 +1,4 @@
-import type { Garage } from './types';
+import type { Garage, GarageInsert } from './types';
 
 const BASE_URL = '/api/garages';
 
@@ -22,9 +22,7 @@ export const getGarageById = async (id: string): Promise<Garage> => {
   return response.json();
 };
 
-export const createGarage = async (
-  garage: Omit<Garage, 'id'>,
-): Promise<Garage> => {
+export const createGarage = async (garage: GarageInsert): Promise<Garage> => {
   const response = await fetch(BASE_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
