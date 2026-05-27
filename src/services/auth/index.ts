@@ -1,11 +1,7 @@
-import bcrypt from 'bcryptjs';
-
 import type { AuthUser, LoginPayload } from './types';
 
 const TOKEN_KEY = 'auth_token';
 const USER_KEY = 'auth_user';
-
-const getPasswordHash = (password: string) => bcrypt.hashSync(password);
 
 export const loginService = async (
   payload: LoginPayload,
@@ -13,10 +9,7 @@ export const loginService = async (
   const response = await fetch('/api/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      ...payload,
-      password: getPasswordHash(payload.password),
-    }),
+    body: JSON.stringify(payload),
   });
 
   if (!response.ok) {
@@ -44,10 +37,7 @@ export const registerService = async (
   const response = await fetch('/api/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      ...payload,
-      password: getPasswordHash(payload.password),
-    }),
+    body: JSON.stringify(payload),
   });
 
   if (!response.ok) {
