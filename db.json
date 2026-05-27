@@ -1,17 +1,17 @@
 {
-  "users": [],
-  "login": [
+  "garages": [],
+  "users": [
     {
       "id": "1",
       "email": "ana@email.com",
-      "password": "123456",
-      "token": "fake-token-ana-admin"
+      "password": "$2b$10$gjk434L9EMs1DQz21XcHa.qeFTkKW/PoNGyE1SZxii3xdStVXjshq",
+      "token": "fake-token-ana"
     },
     {
       "id": "2",
       "email": "bruno@email.com",
-      "password": "123456",
-      "token": "fake-token-bruno-user"
+      "password": "$2b$10$mzUdNIKsindDHNX6oPIWSOhhsQ6udWDMGqDhlE26DqtjbxTW.wwme",
+      "token": "fake-token-bruno"
     }
   ]
 }

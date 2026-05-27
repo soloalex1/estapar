@@ -1,32 +1,33 @@
+import bcrypt from 'bcryptjs';
+
 import type { AuthUser, LoginPayload } from './types';
 
 const TOKEN_KEY = 'auth_token';
 const USER_KEY = 'auth_user';
 
-// Simula o POST /login consultando o db.json via json-server
+const getPasswordHash = (password: string) => bcrypt.hashSync(password);
+
 export const loginService = async (
   payload: LoginPayload,
 ): Promise<AuthUser> => {
-  const response = await fetch(
-    `/api/login?email=${payload.email}&password=${payload.password}`,
-  );
+  const response = await fetch('/api/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      ...payload,
+      password: getPasswordHash(payload.password),
+    }),
+  });
 
-  const results: Array<Omit<AuthUser, 'name'>> = await response.json();
-
-  if (!results.length) {
-    throw new Error('E-mail ou senha inválidos.');
+  if (!response.ok) {
+    const { message } = await response.json();
+    throw new Error(message ?? 'Erro ao fazer login.');
   }
 
-  const { id, token } = results[0];
+  const { accessToken, user } = await response.json();
+  const authUser: AuthUser = { ...user, token: accessToken };
 
-  const userResponse = await fetch(`/api/users/${id}`);
-  if (!userResponse.ok) throw new Error('Usuário não encontrado.');
-
-  const user = await userResponse.json();
-
-  const authUser: AuthUser = { ...user, token };
-
-  localStorage.setItem(TOKEN_KEY, token);
+  localStorage.setItem(TOKEN_KEY, accessToken);
   localStorage.setItem(USER_KEY, JSON.stringify(authUser));
 
   return authUser;
@@ -35,6 +36,28 @@ export const loginService = async (
 export const logoutService = (): void => {
   localStorage.removeItem(TOKEN_KEY);
   localStorage.removeItem(USER_KEY);
+};
+
+export const registerService = async (
+  payload: LoginPayload,
+): Promise<AuthUser> => {
+  const response = await fetch('/api/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      ...payload,
+      password: getPasswordHash(payload.password),
+    }),
+  });
+
+  if (!response.ok) {
+    const { message } = await response.json();
+    throw new Error(message ?? 'Erro ao criar usuário');
+  }
+
+  const authUser: AuthUser = await response.json();
+
+  return authUser;
 };
 
 export const getStoredUser = (): AuthUser | null => {

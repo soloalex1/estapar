@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev:app": "vite",
-    "dev:api": "json-server --watch db.json --port 3001",
+    "dev:api": "json-server-auth db.json",
     "dev": "run-p dev:app dev:api",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
+    "bcryptjs": "^3.0.3",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.15.1",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/bcryptjs": "^2.4.6",
     "@types/json-server": "^0.14.8",
     "@types/node": "^24.12.3",
     "@types/react": "^19.2.14",
@@ -29,7 +31,8 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
-    "json-server": "^1.0.0-beta.15",
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0",
     "npm-run-all": "^4.1.5",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
