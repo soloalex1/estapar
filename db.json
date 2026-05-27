@@ -1,3 +1,17 @@
 {
-  "users": []
+  "users": [],
+  "login": [
+    {
+      "id": "1",
+      "email": "ana@email.com",
+      "password": "123456",
+      "token": "fake-token-ana-admin"
+    },
+    {
+      "id": "2",
+      "email": "bruno@email.com",
+      "password": "123456",
+      "token": "fake-token-bruno-user"
+    }
+  ]
 }
