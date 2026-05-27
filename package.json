@@ -8,6 +8,7 @@
     "dev:api": "node server.cjs",
     "dev": "run-p dev:app dev:api",
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
