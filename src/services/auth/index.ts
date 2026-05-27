@@ -20,8 +20,8 @@ export const loginService = async (
   });
 
   if (!response.ok) {
-    const { message } = await response.json();
-    throw new Error(message ?? 'Erro ao fazer login.');
+    const error = await response.json();
+    throw new Error(error.message ?? error ?? 'Erro ao fazer login.');
   }
 
   const { accessToken, user } = await response.json();

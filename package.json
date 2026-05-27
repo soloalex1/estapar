@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev:app": "vite",
-    "dev:api": "json-server-auth db.json",
+    "dev:api": "node server.cjs",
     "dev": "run-p dev:app dev:api",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
