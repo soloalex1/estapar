@@ -7,6 +7,8 @@ import { PrivateRoute } from './routes/PrivateRoute';
 
 import { LoginPage } from './pages/Login';
 
+import './index.css';
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
