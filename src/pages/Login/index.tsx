@@ -60,7 +60,7 @@ export function LoginPage() {
             required
           />
 
-          {error && <p>{error}</p>}
+          {error && <p className="text-red-500 mt-2">{error}</p>}
 
           <button
             type="submit"
