@@ -1,5 +1,6 @@
 import { use, useActionState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { UserIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
 import { AuthContext } from '../../contexts/AuthContext';
 
@@ -30,9 +31,9 @@ export function LoginPage() {
   return (
     <main
       aria-label="Página de login"
-      className="w-dvw h-dvh p-4 md:p-0 bg-surface flex items-center justify-center"
+      className="w-dvw h-dvh p-4 md:p-0 bg-white-bg flex items-center justify-center"
     >
-      <div className="w-full md:w-1/2 border border-border rounded-lg p-4 md:p-8">
+      <div className="w-full md:w-1/2 bg-white-surface border border-gray-300 rounded-lg p-4 md:p-8">
         <EstaparLogo className="w-32 md:w-60 h-auto mb-6 mx-auto" />
 
         <h1 className="text-black font-semibold text-md mb-4">
@@ -45,6 +46,7 @@ export function LoginPage() {
             id="email"
             label="E-mail"
             placeholder="Digite seu e-mail"
+            icon={<UserIcon className="w-5 h-5 text-gray-400" />}
             required
           />
 
@@ -54,6 +56,7 @@ export function LoginPage() {
             id="password"
             label="Senha"
             placeholder="Digite sua senha"
+            icon={<LockClosedIcon className="w-5 h-5 text-gray-400" />}
             required
           />
 

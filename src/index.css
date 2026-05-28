@@ -2,6 +2,6 @@
 
 @theme {
   --color-brand: #7ad33e;
-  --color-border: #e4e4e7;
-  --color-surface: #f9fafb;
+  --color-white-bg: #e4e4e7;
+  --color-white-surface: #f9fafb;
 }
