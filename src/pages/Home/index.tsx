@@ -69,7 +69,10 @@ const HomePage = () => {
               <TruckIcon className="w-12 h-12 text-brand" />
               <ArrowRightIcon className="w-5 h-5 text-gray-400" />
             </div>
-            <h2 className="text-xl font-semibold text-black mb-2">
+            <h2
+              className="text-xl font-semibold text-black mb-2"
+              id="mensalistas-title"
+            >
               Mensalistas
             </h2>
             <p className="text-gray-500 text-sm">
