@@ -4,6 +4,7 @@
     "module": "CommonJS",
     "moduleResolution": "node16",
     "isolatedModules": true,
-    "types": ["node", "jest"]
+    "jsx": "react-jsx",
+    "types": ["node", "jest", "@testing-library/jest-dom"]
   }
 }
