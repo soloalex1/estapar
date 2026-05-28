@@ -9,4 +9,6 @@ interface AuthContextValue {
   logout: () => void;
 }
 
-export const AuthContext = createContext<AuthContextValue | null>(null);
+const AuthContext = createContext<AuthContextValue | null>(null);
+
+export default AuthContext;
