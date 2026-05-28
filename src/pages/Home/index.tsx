@@ -40,18 +40,31 @@ const HomePage = () => {
         </p>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-6 mt-8">
-          <Card>
-            <div className="flex items-center justify-between mb-4">
-              <BuildingOffice2Icon className="w-12 h-12 text-brand" />
-              <ArrowRightIcon className="w-5 h-5 text-gray-400" />
-            </div>
-            <h2 className="text-xl font-semibold text-black mb-2">Garagens</h2>
-            <p className="text-gray-500 text-sm">
-              Veja a lista de garagens disponíveis e suas configurações.
-            </p>
+          <Card to="/garagens" aria-labelledby="garagens-title">
+            <article aria-labelledby="garagens-title">
+              <div className="flex items-center justify-between mb-4">
+                <BuildingOffice2Icon
+                  className="w-12 h-12 text-brand"
+                  aria-hidden="true"
+                />
+                <ArrowRightIcon
+                  className="w-5 h-5 text-gray-400"
+                  aria-hidden="true"
+                />
+              </div>
+              <h2
+                className="text-xl font-semibold text-black mb-2"
+                id="garagens-title"
+              >
+                Garagens
+              </h2>
+              <p className="text-gray-500 text-sm">
+                Veja a lista de garagens disponíveis e suas configurações.
+              </p>
+            </article>
           </Card>
 
-          <Card>
+          <Card to="/mensalistas" aria-labelledby="mensalistas-title">
             <div className="flex items-center justify-between mb-4">
               <TruckIcon className="w-12 h-12 text-brand" />
               <ArrowRightIcon className="w-5 h-5 text-gray-400" />

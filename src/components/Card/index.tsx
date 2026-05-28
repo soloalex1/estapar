@@ -1,16 +1,23 @@
-const Card = ({
-  children,
-  className,
-}: {
+import { NavLink } from 'react-router-dom';
+
+type CardProps = {
+  to: string;
   children: React.ReactNode;
-  className?: string;
-}) => {
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+const Card = ({ to, children, ...props }: CardProps) => {
   return (
-    <div
-      className={`w-full bg-white rounded-lg shadow-sm p-6 ${className ?? ''} `}
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        `block rounded-lg border border-gray-200 p-6 transition-colors hover:border-brand hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
+          isActive ? 'border-brand' : ''
+        }`
+      }
+      {...props}
     >
       {children}
-    </div>
+    </NavLink>
   );
 };
 
