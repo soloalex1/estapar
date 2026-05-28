@@ -49,7 +49,7 @@ const NavItems = ({ collapsed }: CollapsibleProps) => {
           key={to}
           to={to}
           className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
+            `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
               isActive
                 ? 'bg-green-50 text-green-600 font-medium'
                 : 'text-gray-600 hover:bg-gray-100'
@@ -76,7 +76,7 @@ const CollapseButton = ({ collapsed, onToggle }: CollapsibleProps) => {
   return (
     <button
       onClick={onToggle}
-      className="absolute -right-3 top-13 flex items-center justify-center w-6 h-6 rounded-full bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+      className="absolute -right-3 top-13 flex items-center justify-center w-6 h-6 rounded-full bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
     >
       <span className="sr-only">
         {collapsed ? 'Expandir menu' : 'Colapsar menu'}
