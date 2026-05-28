@@ -12,3 +12,5 @@ export interface AuthUser {
 }
 
 export type AuthUserInsert = Omit<AuthUser, 'token' | 'id'>;
+
+export type AuthUserStored = Omit<AuthUser, 'password' | 'token'>;
