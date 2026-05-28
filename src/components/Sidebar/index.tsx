@@ -6,6 +6,7 @@ import {
 import { NavLink } from 'react-router-dom';
 
 import EstaparLogo from '../../assets/logo.svg?react';
+import EstaparIcon from '../../assets/icon.png';
 
 type CollapsibleProps = {
   collapsed: boolean;
@@ -14,25 +15,35 @@ type CollapsibleProps = {
 
 const Sidebar = ({ collapsed, onToggle }: CollapsibleProps) => {
   return (
-    <aside
-      aria-labelledby="sidebar-title"
-      className={`hidden md:flex absolute top-0 z-30 flex-col h-screen bg-white-surface border-r border-gray-200 transition-all duration-300 ${
-        collapsed ? 'w-16' : 'w-64'
-      }`}
-    >
-      <h2 id="sidebar-title" className="sr-only">
-        Todas as páginas
-      </h2>
+    <>
+      <aside
+        aria-labelledby="sidebar-title"
+        className={`absolute top-0 z-30 flex flex-col h-screen bg-white-surface border-r border-gray-200 transition-all duration-300 ${
+          collapsed ? 'w-16' : 'w-64'
+        }`}
+      >
+        <h2 id="sidebar-title" className="sr-only">
+          Todas as páginas
+        </h2>
 
-      <div className="flex items-center h-16 px-4 border-b border-gray-200 overflow-hidden">
-        <EstaparLogo
-          className={`transition-all duration-300 ${collapsed ? 'w-8' : 'w-28'}`}
-        />
-      </div>
+        <div className="flex items-center h-16 px-4 border-b border-gray-200 overflow-hidden">
+          {collapsed ? (
+            <img
+              alt=""
+              src={EstaparIcon}
+              className="w-8 h-auto transition-all duration-300"
+            />
+          ) : (
+            <EstaparLogo
+              className={`transition-all duration-300 ${collapsed ? 'w-8' : 'w-28'}`}
+            />
+          )}
+        </div>
 
-      <NavItems collapsed={collapsed} />
-      <CollapseButton collapsed={collapsed} onToggle={onToggle} />
-    </aside>
+        <NavItems collapsed={collapsed} />
+        <CollapseButton collapsed={collapsed} onToggle={onToggle} />
+      </aside>
+    </>
   );
 };
 

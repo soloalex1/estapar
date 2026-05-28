@@ -9,8 +9,6 @@ import Card from '../../components/Card';
 import Profile from '../../components/Profile';
 import Sidebar from '../../components/Sidebar';
 
-import EstaparLogo from '../../assets/logo.svg?react';
-
 const HomePage = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
@@ -21,13 +19,12 @@ const HomePage = () => {
         onToggle={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
       />
       <header className="w-full h-6 lg:h-10 absolute top-0 z-20 left-0 bg-white py-8 px-4 flex items-center justify-between md:justify-end">
-        <EstaparLogo className="w-32 h-auto md:hidden" />
         <Profile />
       </header>
 
       <section
         aria-labelledby="home-title"
-        className={`w-full h-full mt-16 lg:mt-20 flex flex-col items-start justify-start gap-4 p-4 ${isSidebarCollapsed ? 'md:px-24' : 'md:pl-72 md:pr-16'} transition-all duration-300`}
+        className={`w-full h-full mt-16 lg:mt-20 flex flex-col items-start justify-start gap-4 pl-22 pr-4 ${isSidebarCollapsed ? 'md:px-24' : 'md:pl-72 md:pr-16'} transition-all duration-300`}
       >
         <h1 id="home-title" className="text-3xl font-bold text-black text-left">
           Bem-vindo ao portal Estapar B2B
