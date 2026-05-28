@@ -5,3 +5,7 @@
   --color-white-bg: #e4e4e7;
   --color-white-surface: #f9fafb;
 }
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
