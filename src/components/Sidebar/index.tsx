@@ -55,30 +55,34 @@ const NavItems = ({ collapsed }: CollapsibleProps) => {
 
   return (
     <nav className="flex flex-col gap-1 p-2 mt-2">
-      {links.map(({ to, label, icon: Icon }) => (
-        <NavLink
-          key={to}
-          to={to}
-          className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
-              isActive
-                ? 'bg-green-50 text-green-600 font-medium'
-                : 'text-gray-600 hover:bg-gray-100'
-            }`
-          }
-        >
-          <Icon className="w-5 h-5 shrink-0" />
-          {!collapsed && (
-            <span
-              className={`whitespace-nowrap overflow-hidden transition-all duration-300 ${
-                collapsed ? 'w-0 opacity-0' : 'w-auto opacity-100'
-              }`}
+      <ul>
+        {links.map(({ to, label, icon: Icon }) => (
+          <li>
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
+                  isActive
+                    ? 'bg-green-50 text-green-600 font-medium'
+                    : 'text-gray-600 hover:bg-gray-100'
+                }`
+              }
             >
-              {label}
-            </span>
-          )}
-        </NavLink>
-      ))}
+              <Icon className="w-5 h-5 shrink-0" />
+              {!collapsed && (
+                <span
+                  className={`whitespace-nowrap overflow-hidden transition-all duration-300 ${
+                    collapsed ? 'w-0 opacity-0' : 'w-auto opacity-100'
+                  }`}
+                >
+                  {label}
+                </span>
+              )}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };
