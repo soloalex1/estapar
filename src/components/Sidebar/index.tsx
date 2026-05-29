@@ -49,8 +49,8 @@ const Sidebar = ({ collapsed, onToggle }: CollapsibleProps) => {
 
 const NavItems = ({ collapsed }: CollapsibleProps) => {
   const links = [
-    { to: '/garagens', label: 'Garagens', icon: BuildingOffice2Icon },
-    { to: '/mensalistas', label: 'Mensalistas', icon: TruckIcon },
+    { to: '/garages', label: 'Garagens', icon: BuildingOffice2Icon },
+    { to: '/mensalists', label: 'Mensalistas', icon: TruckIcon },
   ];
 
   return (
