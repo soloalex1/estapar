@@ -1,11 +1,5 @@
-import Header from '../../components/Header';
-
 const GaragesPage = () => {
-  return (
-    <main>
-      <Header />
-    </main>
-  );
+  return <section></section>;
 };
 
 export default GaragesPage;
