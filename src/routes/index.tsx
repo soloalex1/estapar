@@ -1,13 +1,14 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-import { AuthProvider } from './AuthProvider';
-import { SidebarProvider } from './SidebarProvider';
+import { AuthProvider } from '../providers/AuthProvider';
+import { SidebarProvider } from '../providers/SidebarProvider';
+import AppLayout from '../layouts/AppLayout';
+
 import { PrivateRoute } from './PrivateRoute';
 
 import LoginPage from '../pages/Login';
 import HomePage from '../pages/Home';
 import GaragesPage from '../pages/Garages';
-import AppLayout from '../layouts/AppLayout';
 
 const AppRoutes = () => {
   return (
