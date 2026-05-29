@@ -2,13 +2,13 @@ import { use, useActionState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
-import { AuthContext } from '../../contexts/AuthContext';
+import AuthContext from '../../contexts/AuthContext';
 
 import Input from '../../components/Input';
 
 import EstaparLogo from '../../assets/logo.svg?react';
 
-export function LoginPage() {
+const LoginPage = () => {
   const { login } = use(AuthContext)!;
   const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ export function LoginPage() {
 
       try {
         await login({ email, password });
-        navigate('/users');
+        navigate('/home');
         return null;
       } catch (err) {
         return err instanceof Error ? err.message : 'Erro ao fazer login';
@@ -73,4 +73,6 @@ export function LoginPage() {
       </div>
     </main>
   );
-}
+};
+
+export default LoginPage;

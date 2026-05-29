@@ -7,7 +7,7 @@ import {
 } from '../../services/auth';
 import type { AuthUser, LoginPayload } from '../../services/auth/types';
 
-import { AuthContext } from '../../contexts/AuthContext';
+import AuthContext from '../../contexts/AuthContext';
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<AuthUser | null>(getStoredUser);

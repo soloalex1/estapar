@@ -11,6 +11,10 @@ export default {
       },
     ],
   },
+  moduleNameMapper: {
+    '\\.svg\\?react$': '<rootDir>/src/__mocks__/svgMock.tsx',
+    '\\.(svg|png|jpg|jpeg|gif|webp)$': '<rootDir>/src/__mocks__/fileMock.ts',
+  },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
 };
