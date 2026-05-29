@@ -6,7 +6,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import Card from '../../components/Card';
-import Profile from '../../components/Profile';
+import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 
 const HomePage = () => {
@@ -18,9 +18,8 @@ const HomePage = () => {
         collapsed={isSidebarCollapsed}
         onToggle={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
       />
-      <header className="w-full h-6 lg:h-10 absolute top-0 z-20 left-0 bg-white py-8 px-4 flex items-center justify-between md:justify-end">
-        <Profile />
-      </header>
+
+      <Header />
 
       <section
         aria-labelledby="home-title"
@@ -37,7 +36,7 @@ const HomePage = () => {
         </p>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-6 mt-8">
-          <Card to="/garagens" aria-labelledby="garagens-title">
+          <Card to="/garages" aria-labelledby="garagens-title">
             <article aria-labelledby="garagens-title">
               <div className="flex items-center justify-between mb-4">
                 <BuildingOffice2Icon
