@@ -30,20 +30,19 @@ const ActionMenu = ({ garage, onEdit, onDelete }: ActionMenuProps) => {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const handleClickOutside = (e: MouseEvent) => {
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
       if (
         popoverRef.current &&
         !popoverRef.current.contains(e.target as Node)
       ) {
         setOpen(false);
       }
+    };
 
-      document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('pointerdown', handleClickOutside);
 
-      return () => {
-        document.removeEventListener('mousedown', handleClickOutside);
-      };
+    return () => {
+      document.removeEventListener('pointerdown', handleClickOutside);
     };
   }, []);
 
