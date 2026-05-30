@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Garage 1",
       "code": "000001",
-      "address": "Rua 1, 123",
+      "address": "Avenida Presidente Costa e Silva, 123, Centro",
       "city": "São Paulo",
       "state": "SP",
       "regionalCode": "SP1",
@@ -51,10 +51,10 @@
       "isDigital": true
     },
     {
-      "id": "6",
-      "name": "Garage 6",
-      "code": "000006",
-      "address": "Rua 6, 303",
+      "id": "5",
+      "name": "Shop Power Center Fortaleza",
+      "code": "002934",
+      "address": "Avenida Historiador Raimundo Girão, 345, Praia de Iracema",
       "city": "Fortaleza",
       "state": "CE",
       "regionalCode": "NE",

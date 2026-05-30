@@ -1,6 +1,9 @@
 import { use } from 'react';
 import { BuildingOffice2Icon } from '@heroicons/react/24/outline';
 
+import Table from '../../components/Table';
+
+import useGarages from '../../hooks/useGarages';
 import SidebarContext from '../../contexts/SidebarContext';
 
 const GaragesPage = () => {
@@ -17,11 +20,35 @@ const GaragesPage = () => {
           Garagens
         </h1>
       </div>
-      <p className="text-gray-500">
+      <p className="text-gray-500 mb-4">
         Visualize as garagens habilitadas para mensalidades digitais.
       </p>
+
+      <section className="w-full">
+        <GaragesTableWrapper />
+      </section>
     </section>
   );
+};
+
+const GaragesTableWrapper = () => {
+  const { garages, loading, error, deleteGarage } = useGarages();
+
+  const handleEdit = () => {};
+
+  const handleDelete = (id: string) => {
+    deleteGarage(id);
+  };
+
+  if (loading) {
+    return <p className="text-gray-400">Carregando...</p>;
+  }
+
+  if (error) {
+    return <p className="text-red-500">{error}</p>;
+  }
+
+  return <Table data={garages} onEdit={handleEdit} onDelete={handleDelete} />;
 };
 
 export default GaragesPage;
