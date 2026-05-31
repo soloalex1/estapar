@@ -10,7 +10,7 @@ const AppLayout = () => {
   const { isCollapsed, onToggle } = use(SidebarContext)!;
 
   return (
-    <main className="w-dvw h-fit max-h-dvh overflow-hidden">
+    <main className="w-dvw h-fit max-h-dvh overflow-x-hidden">
       <Sidebar collapsed={isCollapsed} onToggle={onToggle} />
       <Header />
       <Outlet />

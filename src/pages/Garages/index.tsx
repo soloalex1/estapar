@@ -10,6 +10,7 @@ import Pagination from '../../components/Pagination';
 
 import useGarages from '../../hooks/useGarages';
 import SidebarContext from '../../contexts/SidebarContext';
+import GaragesCardView from '../../components/Table/CardView';
 
 const GaragesPage = () => {
   const navigate = useNavigate();
@@ -69,12 +70,24 @@ const GaragesTableWrapper = () => {
 
   return (
     <>
-      <Table
-        data={garages}
-        isLoading={isLoading}
-        onEdit={handleEdit}
-        onDelete={handleDelete}
-      />
+      <div className="md:hidden">
+        <GaragesCardView
+          data={garages}
+          isLoading={isLoading}
+          onDelete={handleDelete}
+          onEdit={handleEdit}
+        />
+      </div>
+
+      <div className="hidden md:block">
+        <Table
+          data={garages}
+          isLoading={isLoading}
+          onEdit={handleEdit}
+          onDelete={handleDelete}
+        />
+      </div>
+
       <Pagination
         page={page}
         pages={pages}

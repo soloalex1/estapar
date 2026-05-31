@@ -26,12 +26,14 @@ const getPageNumbers = (current: number, total: number): (number | '...')[] => {
 
 const Pagination = ({ page, pages, total, onPageChange }: PaginationProps) => {
   const pageNumbers = getPageNumbers(page, pages);
+  const from = total === 0 ? 0 : (page - 1) * 10 + 1;
+  const to = Math.min(page * 10, total);
 
   return (
-    <div className="flex items-center justify-between px-1 py-3 mt-2">
+    <div className="flex flex-col gap-4 md:flex-row items-center justify-center md:justify-between px-1 py-3 mt-2">
       <p className="text-sm text-gray-500">
-        Total de <span className="font-medium text-gray-700">{total}</span>{' '}
-        garagens
+        Exibindo {from}-{to} de{' '}
+        <span className="font-medium text-gray-700">{total}</span> garagens
       </p>
 
       <nav aria-label="Paginação" className="flex items-center gap-1">
