@@ -18,6 +18,7 @@ const getPageNumbers = (current: number, total: number): (number | '...')[] => {
   if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
 
   if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
+
   if (current >= total - 3)
     return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
 
@@ -40,8 +41,8 @@ const Pagination = ({ page, pages, total, onPageChange }: PaginationProps) => {
         <PageButton
           onClick={() => onPageChange(page - 1)}
           disabled={page === 1}
-          aria-label="Página anterior"
         >
+          <span className="sr-only">Página anterior</span>
           <ChevronLeftIcon className="w-4 h-4" />
         </PageButton>
 
@@ -58,9 +59,9 @@ const Pagination = ({ page, pages, total, onPageChange }: PaginationProps) => {
               key={p}
               onClick={() => onPageChange(Number(p))}
               active={p === page}
-              aria-label={`Página ${p}`}
               aria-current={p === page ? 'page' : undefined}
             >
+              <span className="sr-only">Página</span>
               {p}
             </PageButton>
           ),
@@ -69,8 +70,8 @@ const Pagination = ({ page, pages, total, onPageChange }: PaginationProps) => {
         <PageButton
           onClick={() => onPageChange(page + 1)}
           disabled={page === pages}
-          aria-label="Próxima página"
         >
+          <span className="sr-only">Próxima página</span>
           <ChevronRightIcon className="w-4 h-4" />
         </PageButton>
       </nav>
