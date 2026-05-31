@@ -6,13 +6,16 @@ import type { Garage } from '../../services/garages/types';
 
 type GaragesTableProps = {
   data: Garage[];
+  isLoading: boolean;
   onEdit: (garage: Garage) => void;
   onDelete: (id: string) => void;
 };
 
-const Table = ({ data, onEdit, onDelete }: GaragesTableProps) => {
+const Table = ({ data, isLoading, onEdit, onDelete }: GaragesTableProps) => {
   return (
-    <div className="w-full overflow-x-auto rounded-lg border border-gray-200">
+    <div
+      className={`w-full overflow-x-auto rounded-lg border border-gray-200 ${isLoading ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}
+    >
       <table className="w-full text-sm text-left text-black">
         <thead className="border-b border-gray-200">
           <tr>
@@ -25,7 +28,7 @@ const Table = ({ data, onEdit, onDelete }: GaragesTableProps) => {
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-100">
-          {data.length === 0 ? (
+          {data.length === 0 && !isLoading ? (
             <tr>
               <td colSpan={7} className="text-center py-10 text-gray-400">
                 Nenhuma garagem encontrada.

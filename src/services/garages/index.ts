@@ -2,14 +2,37 @@ import type { Garage, GarageInsert } from './types';
 
 const BASE_URL = '/api/garages';
 
-export const getGarages = async (): Promise<Garage[]> => {
-  const response = await fetch(BASE_URL);
+interface GaragesParams {
+  page: number;
+  limit: number;
+}
+
+export interface GaragesPaginatedResponse {
+  data: Garage[];
+  total: number;
+  pages: number;
+}
+
+export const getGarages = async ({
+  page,
+  limit,
+}: GaragesParams): Promise<GaragesPaginatedResponse> => {
+  const params = new URLSearchParams({
+    _page: String(page),
+    _limit: String(limit),
+  });
+
+  const response = await fetch(`${BASE_URL}?${params}`);
 
   if (!response.ok) {
     throw new Error('Erro ao obter lista de garagens.');
   }
 
-  return response.json();
+  const data: Garage[] = await response.json();
+  const total = Number(response.headers.get('X-Total-Count'));
+  const pages = Math.ceil(total / limit);
+
+  return { data, total, pages };
 };
 
 export const getGarageById = async (id: string): Promise<Garage> => {

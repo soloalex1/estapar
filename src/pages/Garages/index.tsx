@@ -2,6 +2,7 @@ import { use } from 'react';
 import { BuildingOffice2Icon } from '@heroicons/react/24/outline';
 
 import Table from '../../components/Table';
+import Pagination from '../../components/Pagination';
 
 import useGarages from '../../hooks/useGarages';
 import SidebarContext from '../../contexts/SidebarContext';
@@ -32,7 +33,13 @@ const GaragesPage = () => {
 };
 
 const GaragesTableWrapper = () => {
-  const { garages, loading, error, deleteGarage } = useGarages();
+  const {
+    garages,
+    isLoading,
+    error,
+    deleteGarage,
+    pagination: { page, pages, total, setPage },
+  } = useGarages();
 
   const handleEdit = () => {};
 
@@ -40,15 +47,26 @@ const GaragesTableWrapper = () => {
     deleteGarage(id);
   };
 
-  if (loading) {
-    return <p className="text-gray-400">Carregando...</p>;
-  }
-
   if (error) {
     return <p className="text-red-500">{error}</p>;
   }
 
-  return <Table data={garages} onEdit={handleEdit} onDelete={handleDelete} />;
+  return (
+    <>
+      <Table
+        data={garages}
+        isLoading={isLoading}
+        onEdit={handleEdit}
+        onDelete={handleDelete}
+      />
+      <Pagination
+        page={page}
+        pages={pages}
+        total={total}
+        onPageChange={setPage}
+      />
+    </>
+  );
 };
 
 export default GaragesPage;
