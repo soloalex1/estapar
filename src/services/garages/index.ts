@@ -5,6 +5,8 @@ const BASE_URL = '/api/garages';
 interface GaragesParams {
   page: number;
   limit: number;
+  isDigital?: boolean;
+  search?: string;
 }
 
 export interface GaragesPaginatedResponse {
@@ -16,11 +18,21 @@ export interface GaragesPaginatedResponse {
 export const getGarages = async ({
   page,
   limit,
+  isDigital,
+  search,
 }: GaragesParams): Promise<GaragesPaginatedResponse> => {
   const params = new URLSearchParams({
     _page: String(page),
     _limit: String(limit),
   });
+
+  if (isDigital !== undefined) {
+    params.set('isDigital', String(isDigital));
+  }
+
+  if (search) {
+    params.set('name_like', search);
+  }
 
   const response = await fetch(`${BASE_URL}?${params}`);
 
@@ -59,7 +71,7 @@ export const createGarage = async (garage: GarageInsert): Promise<Garage> => {
   return response.json();
 };
 
-export async function deleteGarage(id: string): Promise<void> {
+export const deleteGarage = async (id: string): Promise<void> => {
   const response = await fetch(`${BASE_URL}/${id}`, { method: 'DELETE' });
   if (!response.ok) throw new Error('Erro ao deletar garagem.');
-}
+};

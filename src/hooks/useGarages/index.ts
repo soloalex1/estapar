@@ -2,20 +2,30 @@ import { useEffect, useState } from 'react';
 
 import { getGarages, deleteGarage } from '../../services/garages';
 
+import useDebounce from '../useDebounce';
+
 import type { GaragesState, UseGaragesReturn } from './types';
+import type { Filters } from '../../components/Filters/types';
 
 const DEFAULT_LIMIT = 10;
 
-const useGarages = (): UseGaragesReturn => {
+const useGarages = (filters: Partial<Filters> = {}): UseGaragesReturn => {
   const [page, setPage] = useState(1);
   const [state, setState] = useState<GaragesState>({ status: 'idle' });
+
+  const debouncedSearch = useDebounce(filters.search);
 
   const isSuccessful = state.status === 'success';
 
   useEffect(() => {
     let cancelled = false;
 
-    getGarages({ page, limit: DEFAULT_LIMIT })
+    getGarages({
+      page,
+      limit: DEFAULT_LIMIT,
+      isDigital: filters.isDigital,
+      search: debouncedSearch,
+    })
       .then(({ data, total, pages }) => {
         if (!cancelled) {
           setState({ status: 'success', data, total, pages });
@@ -30,7 +40,7 @@ const useGarages = (): UseGaragesReturn => {
     return () => {
       cancelled = true;
     };
-  }, [page]);
+  }, [page, filters.isDigital, debouncedSearch]);
 
   const handleSetPage = (newPage: number) => {
     setState({ status: 'idle' });

@@ -1,28 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 import Input from '../Input';
 import Toggle from './Toggle';
 
-import useDebounce from '../../hooks/useDebounce';
-
 import type { GarageFiltersProps } from './types';
 
 const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
   const [searchInput, setSearchInput] = useState(filters.search);
-  const debouncedSearch = useDebounce(searchInput);
 
   const onDigitalChange = (value: boolean) => {
     onChange({ ...filters, isDigital: value });
   };
 
-  useEffect(() => {
-    if (debouncedSearch === filters.search) return;
-
-    onChange({ ...filters, search: debouncedSearch });
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [debouncedSearch]);
+  const onSearchChange = (value: string) => {
+    setSearchInput(value);
+    onChange({ ...filters, search: value });
+  };
 
   return (
     <form
@@ -44,7 +38,7 @@ const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
           icon={<MagnifyingGlassIcon className="h-4 w-4" />}
           isLabelHidden
           value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
+          onChange={(e) => onSearchChange(e.target.value)}
         />
       </div>
     </form>

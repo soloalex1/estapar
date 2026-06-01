@@ -53,18 +53,18 @@ const GaragesPage = () => {
 };
 
 const GaragesTableWrapper = () => {
+  const [filters, setFilters] = useState<Filters>({
+    isDigital: true,
+    search: '',
+  });
+
   const {
     garages,
     isLoading,
     error,
     deleteGarage,
     pagination: { page, pages, total, setPage },
-  } = useGarages();
-
-  const [filters, setFilters] = useState<Filters>({
-    isDigital: true,
-    search: '',
-  });
+  } = useGarages(filters);
 
   const handleEdit = () => {};
 
