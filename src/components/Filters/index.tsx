@@ -2,19 +2,11 @@ import { useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 import Input from '../Input';
-
-import useDebounce from '../../hooks/useDebounce';
 import Toggle from './Toggle';
 
-type GarageFilters = {
-  isDigital: boolean;
-  search: string;
-};
+import useDebounce from '../../hooks/useDebounce';
 
-type GarageFiltersProps = {
-  filters: GarageFilters;
-  onChange: (filters: GarageFilters) => void;
-};
+import type { GarageFiltersProps } from './types';
 
 const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
   const [searchInput, setSearchInput] = useState(filters.search);
@@ -34,6 +26,7 @@ const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
 
   return (
     <form
+      onSubmit={(e) => e.preventDefault()}
       aria-labelledby="filters-title"
       className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg"
     >
@@ -47,7 +40,7 @@ const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
         id="search"
         label="Buscar garagem por nome"
         placeholder="Buscar por nome ou código"
-        icon={<MagnifyingGlassIcon />}
+        icon={<MagnifyingGlassIcon className="h-4 w-4" />}
         isLabelHidden
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}

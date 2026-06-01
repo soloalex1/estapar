@@ -25,7 +25,7 @@ const Input = ({
         )}
 
         <input
-          className={`w-full text-sm border border-gray-300 rounded px-3 py-2 ${icon ? 'pl-8' : ''} ${className ?? ''}`}
+          className={`w-full text-sm border border-gray-300 rounded px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${icon ? 'pl-8' : ''} ${className ?? ''}`}
           {...props}
         />
       </div>

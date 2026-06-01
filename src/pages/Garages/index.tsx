@@ -1,4 +1,4 @@
-import { use } from 'react';
+import { use, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   BuildingOffice2Icon,
@@ -7,10 +7,13 @@ import {
 
 import Table from '../../components/Table';
 import Pagination from '../../components/Pagination';
+import GarageFilters from '../../components/Filters';
+import GaragesCardView from '../../components/Table/CardView';
 
 import useGarages from '../../hooks/useGarages';
 import SidebarContext from '../../contexts/SidebarContext';
-import GaragesCardView from '../../components/Table/CardView';
+
+import type { Filters } from '../../components/Filters/types';
 
 const GaragesPage = () => {
   const navigate = useNavigate();
@@ -58,6 +61,11 @@ const GaragesTableWrapper = () => {
     pagination: { page, pages, total, setPage },
   } = useGarages();
 
+  const [filters, setFilters] = useState<Filters>({
+    isDigital: true,
+    search: '',
+  });
+
   const handleEdit = () => {};
 
   const handleDelete = (id: string) => {
@@ -70,6 +78,8 @@ const GaragesTableWrapper = () => {
 
   return (
     <>
+      <GarageFilters filters={filters} onChange={setFilters} />
+
       <div className="md:hidden">
         <GaragesCardView
           data={garages}
