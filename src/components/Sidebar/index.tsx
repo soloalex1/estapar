@@ -49,22 +49,21 @@ const Sidebar = ({ collapsed, onToggle }: CollapsibleProps) => {
 
 const NavItems = ({ collapsed }: CollapsibleProps) => {
   const links = [
-    { to: '/garagens', label: 'Garagens', icon: BuildingOffice2Icon },
-    { to: '/mensalistas', label: 'Mensalistas', icon: TruckIcon },
+    { to: '/garages', label: 'Garagens', icon: BuildingOffice2Icon },
+    { to: '/mensalists', label: 'Mensalistas', icon: TruckIcon },
   ];
 
   return (
     <nav className="flex flex-col gap-1 p-2 mt-2">
       <ul>
         {links.map(({ to, label, icon: Icon }) => (
-          <li>
+          <li key={to}>
             <NavLink
-              key={to}
               to={to}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
                   isActive
-                    ? 'bg-green-50 text-green-600 font-medium'
+                    ? 'bg-brand/10 text-brand font-medium'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`
               }

@@ -2,14 +2,49 @@ import type { Garage, GarageInsert } from './types';
 
 const BASE_URL = '/api/garages';
 
-export const getGarages = async (): Promise<Garage[]> => {
-  const response = await fetch(BASE_URL);
+interface GaragesParams {
+  page: number;
+  limit: number;
+  isDigital?: boolean;
+  search?: string;
+}
+
+export interface GaragesPaginatedResponse {
+  data: Garage[];
+  total: number;
+  pages: number;
+}
+
+export const getGarages = async ({
+  page,
+  limit,
+  isDigital,
+  search,
+}: GaragesParams): Promise<GaragesPaginatedResponse> => {
+  const params = new URLSearchParams({
+    _page: String(page),
+    _limit: String(limit),
+  });
+
+  if (isDigital !== undefined) {
+    params.set('isDigital', String(isDigital));
+  }
+
+  if (search) {
+    params.set('name_like', search);
+  }
+
+  const response = await fetch(`${BASE_URL}?${params}`);
 
   if (!response.ok) {
     throw new Error('Erro ao obter lista de garagens.');
   }
 
-  return response.json();
+  const data: Garage[] = await response.json();
+  const total = Number(response.headers.get('X-Total-Count'));
+  const pages = Math.ceil(total / limit);
+
+  return { data, total, pages };
 };
 
 export const getGarageById = async (id: string): Promise<Garage> => {
@@ -36,7 +71,7 @@ export const createGarage = async (garage: GarageInsert): Promise<Garage> => {
   return response.json();
 };
 
-export async function deleteGarage(id: string): Promise<void> {
+export const deleteGarage = async (id: string): Promise<void> => {
   const response = await fetch(`${BASE_URL}/${id}`, { method: 'DELETE' });
   if (!response.ok) throw new Error('Erro ao deletar garagem.');
-}
+};

@@ -1,12 +1,21 @@
 type InputProps = {
-  label?: string;
+  label: string;
+  isLabelHidden?: boolean;
   icon?: React.ReactNode;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const Input = ({ label, icon, className, ...props }: InputProps) => {
+const Input = ({
+  label,
+  isLabelHidden = false,
+  icon,
+  className,
+  ...props
+}: InputProps) => {
   return (
-    <div className="my-4 md:my-6 flex flex-col gap-2">
-      {label && <label htmlFor={props.id}>{label}</label>}
+    <div className="flex flex-col gap-2">
+      <label htmlFor={props.id} className={isLabelHidden ? 'sr-only' : ''}>
+        {label}
+      </label>
 
       <div className="relative flex items-center">
         {icon && (
@@ -16,7 +25,7 @@ const Input = ({ label, icon, className, ...props }: InputProps) => {
         )}
 
         <input
-          className={`w-full text-sm border border-gray-300 rounded px-3 py-2 ${icon ? 'pl-8' : ''} ${className ?? ''}`}
+          className={`w-full text-sm border border-gray-300 rounded px-3 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${icon ? 'pl-8' : ''} ${className ?? ''}`}
           {...props}
         />
       </div>

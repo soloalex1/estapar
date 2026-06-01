@@ -40,25 +40,29 @@ const LoginPage = () => {
           Entre com suas credenciais para acessar o sistema
         </h1>
         <form action={submitAction} className="w-full mx-auto">
-          <Input
-            type="email"
-            name="email"
-            id="email"
-            label="E-mail"
-            placeholder="Digite seu e-mail"
-            icon={<UserIcon className="w-5 h-5 text-gray-400" />}
-            required
-          />
+          <div className="my-4 md:my-6">
+            <Input
+              type="email"
+              name="email"
+              id="email"
+              label="E-mail"
+              placeholder="Digite seu e-mail"
+              icon={<UserIcon className="w-5 h-5 text-gray-400" />}
+              required
+            />
+          </div>
 
-          <Input
-            type="password"
-            name="password"
-            id="password"
-            label="Senha"
-            placeholder="Digite sua senha"
-            icon={<LockClosedIcon className="w-5 h-5 text-gray-400" />}
-            required
-          />
+          <div className="my-4 md:my-6">
+            <Input
+              type="password"
+              name="password"
+              id="password"
+              label="Senha"
+              placeholder="Digite sua senha"
+              icon={<LockClosedIcon className="w-5 h-5 text-gray-400" />}
+              required
+            />
+          </div>
 
           {error && <p className="text-red-500 mt-2">{error}</p>}
 
