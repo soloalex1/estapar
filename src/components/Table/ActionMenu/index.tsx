@@ -1,9 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import {
-  EllipsisVerticalIcon,
-  PencilIcon,
-  TrashIcon,
-} from '@heroicons/react/24/outline';
+import { EyeIcon, PencilIcon, TrashIcon } from '@heroicons/react/24/outline';
 
 import type { Garage } from '../../../services/garages/types';
 
@@ -23,10 +19,12 @@ const ActionMenu = ({ garage, onEdit, onDelete }: ActionMenuProps) => {
 
   const handleEditClick = () => {
     onEdit(garage);
+    handleToggleOpen();
   };
 
   const handleDeleteClick = () => {
     onDelete(garage.id);
+    handleToggleOpen();
   };
 
   useEffect(() => {
@@ -50,12 +48,12 @@ const ActionMenu = ({ garage, onEdit, onDelete }: ActionMenuProps) => {
     <div ref={popoverRef} className="relative flex justify-start">
       <button
         onClick={handleToggleOpen}
-        aria-label={`Ações para ${garage.name}`}
         aria-expanded={open}
         aria-haspopup="menu"
         className="p-1 rounded hover:bg-gray-100 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
       >
-        <EllipsisVerticalIcon className="w-5 h-5 text-gray-500" />
+        <span className="sr-only">Ações para {garage.name}</span>
+        <EyeIcon className="w-5 h-5 text-gray-500" />
       </button>
 
       {open && (
