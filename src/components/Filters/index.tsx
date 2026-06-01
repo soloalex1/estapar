@@ -28,7 +28,7 @@ const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
     <form
       onSubmit={(e) => e.preventDefault()}
       aria-labelledby="filters-title"
-      className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg"
+      className="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between p-4 bg-white border border-gray-200 rounded-lg mb-4"
     >
       <span id="filters-title" className="sr-only">
         Filtros para garagens
@@ -36,15 +36,17 @@ const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
 
       <Toggle checked={filters.isDigital} onChange={onDigitalChange} />
 
-      <Input
-        id="search"
-        label="Buscar garagem por nome"
-        placeholder="Buscar por nome ou código"
-        icon={<MagnifyingGlassIcon className="h-4 w-4" />}
-        isLabelHidden
-        value={searchInput}
-        onChange={(e) => setSearchInput(e.target.value)}
-      />
+      <div className="w-full h-fit md:w-64">
+        <Input
+          id="search"
+          label="Buscar garagem por nome"
+          placeholder="Buscar por nome ou código"
+          icon={<MagnifyingGlassIcon className="h-4 w-4" />}
+          isLabelHidden
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
+      </div>
     </form>
   );
 };
