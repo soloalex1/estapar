@@ -3,12 +3,21 @@ import { createGarage, deleteGarage, getGarageById, getGarages } from '.';
 describe('Garages Service', () => {
   const mockFetch = jest.fn();
 
-  beforeEach(() => {
-    globalThis.fetch = mockFetch;
-  });
+  const mockHeaders = {
+    get: jest.fn().mockReturnValue({
+      'X-Total-Count': '10',
+    }),
+  };
 
-  afterEach(() => {
-    jest.clearAllMocks();
+  globalThis.fetch = mockFetch;
+
+  const defaultPageProps = {
+    page: 1,
+    limit: 10,
+  };
+
+  beforeEach(() => {
+    mockFetch.mockClear();
   });
 
   describe('getGarages', () => {
@@ -39,22 +48,24 @@ describe('Garages Service', () => {
       mockFetch.mockResolvedValueOnce({
         ok: true,
         json: async () => mockGarages,
+        headers: mockHeaders,
       });
 
-      const result = await getGarages();
+      const { data } = await getGarages(defaultPageProps);
 
-      expect(result).toEqual(mockGarages);
+      expect(data).toEqual(mockGarages);
     });
 
     it('should return an empty array if there are no garages available', async () => {
       mockFetch.mockResolvedValueOnce({
         ok: true,
         json: async () => [],
+        headers: mockHeaders,
       });
 
-      const result = await getGarages();
+      const { data } = await getGarages(defaultPageProps);
 
-      expect(result).toEqual([]);
+      expect(data).toEqual([]);
     });
 
     it('should throw an error if the API call fails', async () => {
@@ -64,7 +75,7 @@ describe('Garages Service', () => {
       });
 
       // passing promise call directly to check for rejects
-      await expect(getGarages()).rejects.toThrow(
+      await expect(getGarages(defaultPageProps)).rejects.toThrow(
         'Erro ao obter lista de garagens.',
       );
     });
