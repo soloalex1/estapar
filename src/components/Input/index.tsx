@@ -1,6 +1,6 @@
 type InputProps = {
   label: string;
-  isLabelHidden: boolean;
+  isLabelHidden?: boolean;
   icon?: React.ReactNode;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
@@ -12,7 +12,7 @@ const Input = ({
   ...props
 }: InputProps) => {
   return (
-    <div className="my-4 md:my-6 flex flex-col gap-2">
+    <div className="flex flex-col gap-2">
       <label htmlFor={props.id} className={isLabelHidden ? 'sr-only' : ''}>
         {label}
       </label>
