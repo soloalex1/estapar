@@ -57,9 +57,8 @@ const NavItems = ({ collapsed }: CollapsibleProps) => {
     <nav className="flex flex-col gap-1 p-2 mt-2">
       <ul>
         {links.map(({ to, label, icon: Icon }) => (
-          <li>
+          <li key={to}>
             <NavLink
-              key={to}
               to={to}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
