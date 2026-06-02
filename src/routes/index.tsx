@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NiceModal from '@ebay/nice-modal-react';
 
 import { AuthProvider } from '../providers/AuthProvider';
 import { SidebarProvider } from '../providers/SidebarProvider';
@@ -9,7 +10,7 @@ import { PrivateRoute } from './PrivateRoute';
 import LoginPage from '../pages/Login';
 import HomePage from '../pages/Home';
 import GaragesPage from '../pages/Garages';
-import NiceModal from '@ebay/nice-modal-react';
+import NotFoundPage from '../pages/NotFound';
 
 const AppRoutes = () => {
   return (
@@ -18,7 +19,7 @@ const AppRoutes = () => {
         <SidebarProvider>
           <NiceModal.Provider>
             <Routes>
-              <Route path="*" element={<Navigate to="/login" replace />} />
+              <Route path="*" element={<NotFoundPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route element={<PrivateRoute />}>
                 <Route element={<AppLayout />}>
