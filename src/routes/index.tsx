@@ -11,6 +11,7 @@ import LoginPage from '../pages/Login';
 import HomePage from '../pages/Home';
 import GaragesPage from '../pages/Garages';
 import NotFoundPage from '../pages/NotFound';
+import RegisterPage from '../pages/Register';
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
             <Routes>
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegisterPage />} />
               <Route element={<PrivateRoute />}>
                 <Route element={<AppLayout />}>
                   <Route path="/home" element={<HomePage />} />

@@ -1,5 +1,5 @@
 import { use, useActionState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { UserIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
 import AuthContext from '../../contexts/AuthContext';
@@ -74,6 +74,12 @@ const LoginPage = () => {
             {isPending ? 'Entrando...' : 'Entrar'}
           </button>
         </form>
+        <p className="text-center text-sm text-gray-500 mt-4">
+          Não tem uma conta?{' '}
+          <NavLink to="/register" className="text-brand hover:underline">
+            Cadastrar-se
+          </NavLink>
+        </p>
       </div>
     </main>
   );
