@@ -4,6 +4,7 @@ export type PlanStatus = 'active' | 'inactive';
 
 export interface Plan {
   id: string;
+  garageId: string;
   description: string;
   status: PlanStatus;
   vehicleType: VehicleType;
