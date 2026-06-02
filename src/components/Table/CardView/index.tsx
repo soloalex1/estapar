@@ -1,18 +1,17 @@
 import type { Garage } from '../../../services/garages/types';
+
 import GarageCard from './Card';
 
 type GaragesCardViewProps = {
   data: Garage[];
   isLoading: boolean;
-  onEdit: (garage: Garage) => void;
-  onDelete: (id: string) => void;
+  onOpenDetails: (id: string) => void;
 };
 
 const GaragesCardView = ({
   data,
   isLoading,
-  onDelete,
-  onEdit,
+  onOpenDetails,
 }: GaragesCardViewProps) => {
   if (isLoading) {
     return <p className="text-gray-500">Carregando...</p>;
@@ -26,7 +25,7 @@ const GaragesCardView = ({
     <ul className="flex flex-col gap-4">
       {data.map((garage) => (
         <li key={garage.id}>
-          <GarageCard garage={garage} onDelete={onDelete} onEdit={onEdit} />
+          <GarageCard garage={garage} onOpenDetails={onOpenDetails} />
         </li>
       ))}
     </ul>

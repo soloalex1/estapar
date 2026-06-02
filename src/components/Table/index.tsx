@@ -1,17 +1,15 @@
 import { type ReactNode } from 'react';
-
-import ActionMenu from './ActionMenu';
+import { EyeIcon } from '@heroicons/react/24/outline';
 
 import type { Garage } from '../../services/garages/types';
 
 type GaragesTableProps = {
   data: Garage[];
   isLoading: boolean;
-  onEdit: (garage: Garage) => void;
-  onDelete: (id: string) => void;
+  onOpenDetails: (id: string) => void;
 };
 
-const Table = ({ data, isLoading, onEdit, onDelete }: GaragesTableProps) => {
+const Table = ({ data, isLoading, onOpenDetails }: GaragesTableProps) => {
   return (
     <div
       className={`w-full overflow-x-auto rounded-lg border border-gray-200 ${isLoading ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}
@@ -50,11 +48,9 @@ const Table = ({ data, isLoading, onEdit, onDelete }: GaragesTableProps) => {
                 </Td>
                 <Td>{garage.regionalCode}</Td>
                 <Td>
-                  <ActionMenu
-                    garage={garage}
-                    onEdit={onEdit}
-                    onDelete={onDelete}
-                  />
+                  <button onClick={() => onOpenDetails(garage.id)}>
+                    <EyeIcon className="w-5 h-5 text-blue-500 hover:text-brand" />
+                  </button>
                 </Td>
               </tr>
             ))

@@ -1,14 +1,13 @@
-import ActionMenu from '../../ActionMenu';
+import { EyeIcon } from '@heroicons/react/24/outline';
 
 import type { Garage } from '../../../../services/garages/types';
 
 type GarageCardProps = {
   garage: Garage;
-  onEdit: (garage: Garage) => void;
-  onDelete: (id: string) => void;
+  onOpenDetails: (id: string) => void;
 };
 
-const GarageCard = ({ garage, onEdit, onDelete }: GarageCardProps) => {
+const GarageCard = ({ garage, onOpenDetails }: GarageCardProps) => {
   return (
     <article
       aria-label={garage.name}
@@ -19,7 +18,9 @@ const GarageCard = ({ garage, onEdit, onDelete }: GarageCardProps) => {
           <h2 className="text-sm font-semibold text-gray-800">{garage.name}</h2>
           <span className="font-mono text-xs text-gray-400">{garage.code}</span>
         </div>
-        <ActionMenu garage={garage} onEdit={onEdit} onDelete={onDelete} />
+        <button onClick={() => onOpenDetails(garage.id)}>
+          <EyeIcon className="w-5 h-5 text-gray-500 hover:text-brand" />
+        </button>
       </div>
 
       <div className="flex flex-col gap-1.5">

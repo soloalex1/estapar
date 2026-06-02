@@ -1,506 +1,4 @@
 {
-  "garages": [
-    {
-      "id": "1",
-      "name": "Garage 1",
-      "code": "000001",
-      "address": "Rua 1, 123",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP1",
-      "isDigital": true
-    },
-    {
-      "id": "2",
-      "name": "Garage 2",
-      "code": "000002",
-      "address": "Av. Paulista, 1000",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP1",
-      "isDigital": true
-    },
-    {
-      "id": "3",
-      "name": "Garage 3",
-      "code": "000003",
-      "address": "Rua Augusta, 500",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP1",
-      "isDigital": false
-    },
-    {
-      "id": "4",
-      "name": "Garage 4",
-      "code": "000004",
-      "address": "Rua Oscar Freire, 200",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP2",
-      "isDigital": true
-    },
-    {
-      "id": "5",
-      "name": "Garage 5",
-      "code": "000005",
-      "address": "Av. Brigadeiro Faria Lima, 3000",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP2",
-      "isDigital": true
-    },
-    {
-      "id": "6",
-      "name": "Garage 6",
-      "code": "000006",
-      "address": "Rua da Consolação, 800",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP2",
-      "isDigital": false
-    },
-    {
-      "id": "7",
-      "name": "Garage 7",
-      "code": "000007",
-      "address": "Av. Rebouças, 1500",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP3",
-      "isDigital": true
-    },
-    {
-      "id": "8",
-      "name": "Garage 8",
-      "code": "000008",
-      "address": "Rua Haddock Lobo, 300",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP3",
-      "isDigital": false
-    },
-    {
-      "id": "9",
-      "name": "Garage 9",
-      "code": "000009",
-      "address": "Av. Europa, 700",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP3",
-      "isDigital": true
-    },
-    {
-      "id": "10",
-      "name": "Garage 10",
-      "code": "000010",
-      "address": "Rua Pamplona, 150",
-      "city": "São Paulo",
-      "state": "SP",
-      "regionalCode": "SP3",
-      "isDigital": false
-    },
-    {
-      "id": "11",
-      "name": "Garage 11",
-      "code": "000011",
-      "address": "Rua das Flores, 45",
-      "city": "Campinas",
-      "state": "SP",
-      "regionalCode": "SP1",
-      "isDigital": true
-    },
-    {
-      "id": "12",
-      "name": "Garage 12",
-      "code": "000012",
-      "address": "Av. Norte Sul, 2200",
-      "city": "Campinas",
-      "state": "SP",
-      "regionalCode": "SP1",
-      "isDigital": false
-    },
-    {
-      "id": "13",
-      "name": "Garage 13",
-      "code": "000013",
-      "address": "Rua Barão de Jaguara, 900",
-      "city": "Campinas",
-      "state": "SP",
-      "regionalCode": "SP1",
-      "isDigital": true
-    },
-    {
-      "id": "14",
-      "name": "Garage 14",
-      "code": "000014",
-      "address": "Av. Francisco Glicério, 400",
-      "city": "Campinas",
-      "state": "SP",
-      "regionalCode": "SP2",
-      "isDigital": false
-    },
-    {
-      "id": "15",
-      "name": "Garage 15",
-      "code": "000015",
-      "address": "Rua Conceição, 600",
-      "city": "Campinas",
-      "state": "SP",
-      "regionalCode": "SP2",
-      "isDigital": true
-    },
-    {
-      "id": "16",
-      "name": "Garage 16",
-      "code": "000016",
-      "address": "Av. Atlântica, 2000",
-      "city": "Rio de Janeiro",
-      "state": "RJ",
-      "regionalCode": "RJ1",
-      "isDigital": true
-    },
-    {
-      "id": "17",
-      "name": "Garage 17",
-      "code": "000017",
-      "address": "Rua Visconde de Pirajá, 350",
-      "city": "Rio de Janeiro",
-      "state": "RJ",
-      "regionalCode": "RJ1",
-      "isDigital": true
-    },
-    {
-      "id": "18",
-      "name": "Garage 18",
-      "code": "000018",
-      "address": "Av. Nossa Senhora de Copacabana, 800",
-      "city": "Rio de Janeiro",
-      "state": "RJ",
-      "regionalCode": "RJ1",
-      "isDigital": false
-    },
-    {
-      "id": "19",
-      "name": "Garage 19",
-      "code": "000019",
-      "address": "Rua Barata Ribeiro, 120",
-      "city": "Rio de Janeiro",
-      "state": "RJ",
-      "regionalCode": "RJ2",
-      "isDigital": true
-    },
-    {
-      "id": "20",
-      "name": "Garage 20",
-      "code": "000020",
-      "address": "Av. Rio Branco, 1100",
-      "city": "Rio de Janeiro",
-      "state": "RJ",
-      "regionalCode": "RJ2",
-      "isDigital": false
-    },
-    {
-      "id": "21",
-      "name": "Garage 21",
-      "code": "000021",
-      "address": "Rua da Praia, 500",
-      "city": "Porto Alegre",
-      "state": "RS",
-      "regionalCode": "RS1",
-      "isDigital": true
-    },
-    {
-      "id": "22",
-      "name": "Garage 22",
-      "code": "000022",
-      "address": "Av. Borges de Medeiros, 700",
-      "city": "Porto Alegre",
-      "state": "RS",
-      "regionalCode": "RS1",
-      "isDigital": false
-    },
-    {
-      "id": "23",
-      "name": "Garage 23",
-      "code": "000023",
-      "address": "Rua dos Andradas, 300",
-      "city": "Porto Alegre",
-      "state": "RS",
-      "regionalCode": "RS1",
-      "isDigital": true
-    },
-    {
-      "id": "24",
-      "name": "Garage 24",
-      "code": "000024",
-      "address": "Av. Ipiranga, 1800",
-      "city": "Porto Alegre",
-      "state": "RS",
-      "regionalCode": "RS2",
-      "isDigital": false
-    },
-    {
-      "id": "25",
-      "name": "Garage 25",
-      "code": "000025",
-      "address": "Rua Voluntários da Pátria, 600",
-      "city": "Porto Alegre",
-      "state": "RS",
-      "regionalCode": "RS2",
-      "isDigital": true
-    },
-    {
-      "id": "26",
-      "name": "Garage 26",
-      "code": "000026",
-      "address": "Av. Sete de Setembro, 900",
-      "city": "Curitiba",
-      "state": "PR",
-      "regionalCode": "PR1",
-      "isDigital": true
-    },
-    {
-      "id": "27",
-      "name": "Garage 27",
-      "code": "000027",
-      "address": "Rua XV de Novembro, 400",
-      "city": "Curitiba",
-      "state": "PR",
-      "regionalCode": "PR1",
-      "isDigital": false
-    },
-    {
-      "id": "28",
-      "name": "Garage 28",
-      "code": "000028",
-      "address": "Av. Visconde de Guarapuava, 2500",
-      "city": "Curitiba",
-      "state": "PR",
-      "regionalCode": "PR1",
-      "isDigital": true
-    },
-    {
-      "id": "29",
-      "name": "Garage 29",
-      "code": "000029",
-      "address": "Rua Marechal Deodoro, 700",
-      "city": "Curitiba",
-      "state": "PR",
-      "regionalCode": "PR2",
-      "isDigital": false
-    },
-    {
-      "id": "30",
-      "name": "Garage 30",
-      "code": "000030",
-      "address": "Av. Batel, 1200",
-      "city": "Curitiba",
-      "state": "PR",
-      "regionalCode": "PR2",
-      "isDigital": true
-    },
-    {
-      "id": "31",
-      "name": "Garage 31",
-      "code": "000031",
-      "address": "Av. Afonso Pena, 1500",
-      "city": "Belo Horizonte",
-      "state": "MG",
-      "regionalCode": "MG1",
-      "isDigital": true
-    },
-    {
-      "id": "32",
-      "name": "Garage 32",
-      "code": "000032",
-      "address": "Rua da Bahia, 800",
-      "city": "Belo Horizonte",
-      "state": "MG",
-      "regionalCode": "MG1",
-      "isDigital": false
-    },
-    {
-      "id": "33",
-      "name": "Garage 33",
-      "code": "000033",
-      "address": "Av. do Contorno, 3000",
-      "city": "Belo Horizonte",
-      "state": "MG",
-      "regionalCode": "MG1",
-      "isDigital": true
-    },
-    {
-      "id": "34",
-      "name": "Garage 34",
-      "code": "000034",
-      "address": "Rua Espírito Santo, 450",
-      "city": "Belo Horizonte",
-      "state": "MG",
-      "regionalCode": "MG2",
-      "isDigital": false
-    },
-    {
-      "id": "35",
-      "name": "Garage 35",
-      "code": "000035",
-      "address": "Av. Raja Gabaglia, 1000",
-      "city": "Belo Horizonte",
-      "state": "MG",
-      "regionalCode": "MG2",
-      "isDigital": true
-    },
-    {
-      "id": "36",
-      "name": "Garage 36",
-      "code": "000036",
-      "address": "Av. Boa Viagem, 2500",
-      "city": "Recife",
-      "state": "PE",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "37",
-      "name": "Garage 37",
-      "code": "000037",
-      "address": "Rua do Bom Jesus, 200",
-      "city": "Recife",
-      "state": "PE",
-      "regionalCode": "NE",
-      "isDigital": false
-    },
-    {
-      "id": "38",
-      "name": "Garage 38",
-      "code": "000038",
-      "address": "Av. Agamenon Magalhães, 1800",
-      "city": "Recife",
-      "state": "PE",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "39",
-      "name": "Garage 39",
-      "code": "000039",
-      "address": "Rua da Aurora, 600",
-      "city": "Recife",
-      "state": "PE",
-      "regionalCode": "NE",
-      "isDigital": false
-    },
-    {
-      "id": "40",
-      "name": "Garage 40",
-      "code": "000040",
-      "address": "Av. Conde da Boa Vista, 900",
-      "city": "Recife",
-      "state": "PE",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "41",
-      "name": "Garage 41",
-      "code": "000041",
-      "address": "Av. Tancredo Neves, 3500",
-      "city": "Salvador",
-      "state": "BA",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "42",
-      "name": "Garage 42",
-      "code": "000042",
-      "address": "Rua Chile, 400",
-      "city": "Salvador",
-      "state": "BA",
-      "regionalCode": "NE",
-      "isDigital": false
-    },
-    {
-      "id": "43",
-      "name": "Garage 43",
-      "code": "000043",
-      "address": "Av. Sete de Setembro, 2000",
-      "city": "Salvador",
-      "state": "BA",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "44",
-      "name": "Garage 44",
-      "code": "000044",
-      "address": "Rua Carlos Gomes, 700",
-      "city": "Salvador",
-      "state": "BA",
-      "regionalCode": "NE",
-      "isDigital": false
-    },
-    {
-      "id": "45",
-      "name": "Garage 45",
-      "code": "000045",
-      "address": "Av. Oceânica, 1500",
-      "city": "Salvador",
-      "state": "BA",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "46",
-      "name": "Garage 46",
-      "code": "000046",
-      "address": "Av. Beira Mar, 1000",
-      "city": "Fortaleza",
-      "state": "CE",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "47",
-      "name": "Garage 47",
-      "code": "000047",
-      "address": "Rua Monsenhor Tabosa, 500",
-      "city": "Fortaleza",
-      "state": "CE",
-      "regionalCode": "NE",
-      "isDigital": false
-    },
-    {
-      "id": "48",
-      "name": "Garage 48",
-      "code": "000048",
-      "address": "Av. Santos Dumont, 2200",
-      "city": "Fortaleza",
-      "state": "CE",
-      "regionalCode": "NE",
-      "isDigital": true
-    },
-    {
-      "id": "49",
-      "name": "Garage 49",
-      "code": "000049",
-      "address": "Rua Major Facundo, 300",
-      "city": "Fortaleza",
-      "state": "CE",
-      "regionalCode": "NE",
-      "isDigital": false
-    },
-    {
-      "id": "50",
-      "name": "Garage 50",
-      "code": "000050",
-      "address": "Av. Domingos Olímpio, 800",
-      "city": "Fortaleza",
-      "state": "CE",
-      "regionalCode": "NE",
-      "isDigital": true
-    }
-  ],
   "users": [
     {
       "id": "1",
@@ -515,6 +13,1592 @@
       "name": "Bruno Silva",
       "password": "$2b$10$mzUdNIKsindDHNX6oPIWSOhhsQ6udWDMGqDhlE26DqtjbxTW.wwme",
       "token": "fake-token-bruno"
+    }
+  ],
+
+  "garages": [
+    {
+      "id": "1",
+      "address": "Rua 1, 123",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": true,
+      "name": "ACYR DE ANDRADE (GMC PARK)",
+      "code": "851907",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 67,
+      "occupiedSpots": 0,
+      "availableSpots": 67,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 1463.4,
+          "totalSpots": 67,
+          "occupiedSpots": 17,
+          "availableSpots": 50,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "address": "Av. Paulista, 1000",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": true,
+      "name": "PARADISE GARDEN (GMC PARK)",
+      "code": "558630",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 22,
+      "occupiedSpots": 21,
+      "availableSpots": 1,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1650.49,
+          "totalSpots": 22,
+          "occupiedSpots": 7,
+          "availableSpots": 15,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "address": "Rua Augusta, 500",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": false,
+      "name": "GRANDE AVENIDA (NEXT)",
+      "code": "303900",
+      "branch": "FRANQUIAS E PARCERIAS",
+      "totalSpots": 30,
+      "occupiedSpots": 22,
+      "availableSpots": 8,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Estudante",
+          "value": 693.81,
+          "totalSpots": 15,
+          "occupiedSpots": 9,
+          "availableSpots": 6,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Empresarial",
+          "value": 1578.69,
+          "totalSpots": 15,
+          "occupiedSpots": 2,
+          "availableSpots": 13,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "address": "Rua Oscar Freire, 200",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP2",
+      "isDigital": true,
+      "name": "CLUBE DO BANESPA (AUTO VAGAS)",
+      "code": "360363",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 84,
+      "occupiedSpots": 42,
+      "availableSpots": 42,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Executivo",
+          "value": 1279.4,
+          "totalSpots": 84,
+          "occupiedSpots": 46,
+          "availableSpots": 38,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "address": "Av. Brigadeiro Faria Lima, 3000",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP2",
+      "isDigital": true,
+      "name": "COMENDADOR - FNAC (AUTO VAGAS)",
+      "code": "181961",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 59,
+      "occupiedSpots": 32,
+      "availableSpots": 27,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Padrão",
+          "value": 1270.16,
+          "totalSpots": 59,
+          "occupiedSpots": 24,
+          "availableSpots": 35,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "address": "Rua da Consolação, 800",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP2",
+      "isDigital": false,
+      "name": "CASA DEL LAVORO (C3 PARKING)",
+      "code": "137184",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 75,
+      "occupiedSpots": 58,
+      "availableSpots": 17,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1308.34,
+          "totalSpots": 37,
+          "occupiedSpots": 30,
+          "availableSpots": 7,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Moto",
+          "value": 817.97,
+          "totalSpots": 37,
+          "occupiedSpots": 19,
+          "availableSpots": 18,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "address": "Av. Rebouças, 1500",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP3",
+      "isDigital": true,
+      "name": "ED COM LIZ EMPRESARIAL - WP",
+      "code": "340744",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 91,
+      "occupiedSpots": 54,
+      "availableSpots": 37,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Padrão",
+          "value": 1802.19,
+          "totalSpots": 30,
+          "occupiedSpots": 16,
+          "availableSpots": 14,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Executivo",
+          "value": 808.72,
+          "totalSpots": 30,
+          "occupiedSpots": 3,
+          "availableSpots": 27,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Moto",
+          "value": 651.54,
+          "totalSpots": 30,
+          "occupiedSpots": 6,
+          "availableSpots": 24,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "address": "Rua Haddock Lobo, 300",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP3",
+      "isDigital": false,
+      "name": "SHOP POWER CENTER MINAS",
+      "code": "190919",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 31,
+      "occupiedSpots": 2,
+      "availableSpots": 29,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Estudante",
+          "value": 1251.03,
+          "totalSpots": 31,
+          "occupiedSpots": 27,
+          "availableSpots": 4,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "address": "Av. Europa, 700",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP3",
+      "isDigital": true,
+      "name": "ED COM VERTICE VALINHOS",
+      "code": "194634",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 20,
+      "occupiedSpots": 1,
+      "availableSpots": 19,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 1579.59,
+          "totalSpots": 20,
+          "occupiedSpots": 14,
+          "availableSpots": 6,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "address": "Rua Pamplona, 150",
+      "city": "São Paulo",
+      "state": "SP",
+      "regionalCode": "SP3",
+      "isDigital": false,
+      "name": "CENTRO EMPRESARIAL ITAIM",
+      "code": "729460",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 39,
+      "occupiedSpots": 15,
+      "availableSpots": 24,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano SUV",
+          "value": 649.33,
+          "totalSpots": 39,
+          "occupiedSpots": 38,
+          "availableSpots": 1,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "address": "Rua das Flores, 45",
+      "city": "Campinas",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": true,
+      "name": "SHOPPING ELDORADO",
+      "code": "881043",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 29,
+      "occupiedSpots": 24,
+      "availableSpots": 5,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1637.47,
+          "totalSpots": 14,
+          "occupiedSpots": 2,
+          "availableSpots": 12,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Estudante",
+          "value": 1681.55,
+          "totalSpots": 14,
+          "occupiedSpots": 4,
+          "availableSpots": 10,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "address": "Av. Norte Sul, 2200",
+      "city": "Campinas",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": false,
+      "name": "CONJUNTO NACIONAL",
+      "code": "393562",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 100,
+      "occupiedSpots": 69,
+      "availableSpots": 31,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Estudante",
+          "value": 525.76,
+          "totalSpots": 33,
+          "occupiedSpots": 14,
+          "availableSpots": 19,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Plano Rotativo",
+          "value": 1145.72,
+          "totalSpots": 33,
+          "occupiedSpots": 21,
+          "availableSpots": 12,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Rotativo",
+          "value": 1109.18,
+          "totalSpots": 33,
+          "occupiedSpots": 9,
+          "availableSpots": 24,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "address": "Rua Barão de Jaguara, 900",
+      "city": "Campinas",
+      "state": "SP",
+      "regionalCode": "SP1",
+      "isDigital": true,
+      "name": "EDIFÍCIO COPAN",
+      "code": "881185",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 57,
+      "occupiedSpots": 16,
+      "availableSpots": 41,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1208.5,
+          "totalSpots": 19,
+          "occupiedSpots": 14,
+          "availableSpots": 5,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano SUV",
+          "value": 1103.03,
+          "totalSpots": 19,
+          "occupiedSpots": 18,
+          "availableSpots": 1,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Empresarial",
+          "value": 1129.36,
+          "totalSpots": 19,
+          "occupiedSpots": 11,
+          "availableSpots": 8,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "address": "Av. Francisco Glicério, 400",
+      "city": "Campinas",
+      "state": "SP",
+      "regionalCode": "SP2",
+      "isDigital": false,
+      "name": "TORRE NORTE EMPRESARIAL",
+      "code": "232763",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 29,
+      "occupiedSpots": 28,
+      "availableSpots": 1,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Moto",
+          "value": 1824.42,
+          "totalSpots": 14,
+          "occupiedSpots": 0,
+          "availableSpots": 14,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Padrão",
+          "value": 1314.17,
+          "totalSpots": 14,
+          "occupiedSpots": 14,
+          "availableSpots": 0,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "address": "Rua Conceição, 600",
+      "city": "Campinas",
+      "state": "SP",
+      "regionalCode": "SP2",
+      "isDigital": true,
+      "name": "PÁTIO PAULISTA",
+      "code": "567118",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 85,
+      "occupiedSpots": 62,
+      "availableSpots": 23,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1781.47,
+          "totalSpots": 42,
+          "occupiedSpots": 30,
+          "availableSpots": 12,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Final de Semana",
+          "value": 1819.62,
+          "totalSpots": 42,
+          "occupiedSpots": 42,
+          "availableSpots": 0,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "address": "Av. Atlântica, 2000",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "regionalCode": "RJ1",
+      "isDigital": true,
+      "name": "SHOPPING MORUMBI (GMC PARK)",
+      "code": "601509",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 79,
+      "occupiedSpots": 60,
+      "availableSpots": 19,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Empresarial",
+          "value": 1202.13,
+          "totalSpots": 39,
+          "occupiedSpots": 22,
+          "availableSpots": 17,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Estudante",
+          "value": 1061.63,
+          "totalSpots": 39,
+          "occupiedSpots": 11,
+          "availableSpots": 28,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "address": "Rua Visconde de Pirajá, 350",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "regionalCode": "RJ1",
+      "isDigital": true,
+      "name": "CENTRO CULTURAL FIESP",
+      "code": "784976",
+      "branch": "FRANQUIAS E PARCERIAS",
+      "totalSpots": 23,
+      "occupiedSpots": 10,
+      "availableSpots": 13,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Estudante",
+          "value": 1131.53,
+          "totalSpots": 11,
+          "occupiedSpots": 4,
+          "availableSpots": 7,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano SUV",
+          "value": 1419.08,
+          "totalSpots": 11,
+          "occupiedSpots": 4,
+          "availableSpots": 7,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "address": "Av. Nossa Senhora de Copacabana, 800",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "regionalCode": "RJ1",
+      "isDigital": false,
+      "name": "EDIFÍCIO MARTINELLI",
+      "code": "505663",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 50,
+      "occupiedSpots": 0,
+      "availableSpots": 50,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Padrão",
+          "value": 896.72,
+          "totalSpots": 50,
+          "occupiedSpots": 36,
+          "availableSpots": 14,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "address": "Rua Barata Ribeiro, 120",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "regionalCode": "RJ2",
+      "isDigital": true,
+      "name": "SHOPPING IBIRAPUERA",
+      "code": "784904",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 40,
+      "occupiedSpots": 2,
+      "availableSpots": 38,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1097.53,
+          "totalSpots": 40,
+          "occupiedSpots": 3,
+          "availableSpots": 37,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "address": "Av. Rio Branco, 1100",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "regionalCode": "RJ2",
+      "isDigital": false,
+      "name": "PARQUE ANHEMBI",
+      "code": "834243",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 24,
+      "occupiedSpots": 23,
+      "availableSpots": 1,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Empresarial",
+          "value": 839.63,
+          "totalSpots": 8,
+          "occupiedSpots": 1,
+          "availableSpots": 7,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Final de Semana",
+          "value": 1817.78,
+          "totalSpots": 8,
+          "occupiedSpots": 3,
+          "availableSpots": 5,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Executivo",
+          "value": 1246.37,
+          "totalSpots": 8,
+          "occupiedSpots": 2,
+          "availableSpots": 6,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "address": "Rua da Praia, 500",
+      "city": "Porto Alegre",
+      "state": "RS",
+      "regionalCode": "RS1",
+      "isDigital": true,
+      "name": "CENTRO COMERCIAL LAPA",
+      "code": "471299",
+      "branch": "ADMINISTRACAO E SERVICOS - SP",
+      "totalSpots": 75,
+      "occupiedSpots": 74,
+      "availableSpots": 1,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1565.44,
+          "totalSpots": 75,
+          "occupiedSpots": 34,
+          "availableSpots": 41,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "address": "Av. Borges de Medeiros, 700",
+      "city": "Porto Alegre",
+      "state": "RS",
+      "regionalCode": "RS1",
+      "isDigital": false,
+      "name": "SHOPPING METRÔ TUCURUVI",
+      "code": "511306",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 99,
+      "occupiedSpots": 65,
+      "availableSpots": 34,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Empresarial",
+          "value": 685.0,
+          "totalSpots": 99,
+          "occupiedSpots": 32,
+          "availableSpots": 67,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "address": "Rua dos Andradas, 300",
+      "city": "Porto Alegre",
+      "state": "RS",
+      "regionalCode": "RS1",
+      "isDigital": true,
+      "name": "EDIFÍCIO BELA CINTRA",
+      "code": "994251",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 88,
+      "occupiedSpots": 78,
+      "availableSpots": 10,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1231.99,
+          "totalSpots": 44,
+          "occupiedSpots": 7,
+          "availableSpots": 37,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Noturno",
+          "value": 1545.84,
+          "totalSpots": 44,
+          "occupiedSpots": 41,
+          "availableSpots": 3,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "address": "Av. Ipiranga, 1800",
+      "city": "Porto Alegre",
+      "state": "RS",
+      "regionalCode": "RS2",
+      "isDigital": false,
+      "name": "SHOPPING TABOÃO (AUTO VAGAS)",
+      "code": "265792",
+      "branch": "OPERACOES INTERIOR SP",
+      "totalSpots": 43,
+      "occupiedSpots": 17,
+      "availableSpots": 26,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Executivo",
+          "value": 1194.51,
+          "totalSpots": 14,
+          "occupiedSpots": 13,
+          "availableSpots": 1,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Rotativo",
+          "value": 1290.14,
+          "totalSpots": 14,
+          "occupiedSpots": 12,
+          "availableSpots": 2,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Empresarial",
+          "value": 1921.51,
+          "totalSpots": 14,
+          "occupiedSpots": 3,
+          "availableSpots": 11,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "address": "Rua Voluntários da Pátria, 600",
+      "city": "Porto Alegre",
+      "state": "RS",
+      "regionalCode": "RS2",
+      "isDigital": true,
+      "name": "CENTRO EMPRESARIAL BERRINI",
+      "code": "832472",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 49,
+      "occupiedSpots": 41,
+      "availableSpots": 8,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1265.41,
+          "totalSpots": 24,
+          "occupiedSpots": 5,
+          "availableSpots": 19,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Estudante",
+          "value": 1253.26,
+          "totalSpots": 24,
+          "occupiedSpots": 20,
+          "availableSpots": 4,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "address": "Av. Sete de Setembro, 900",
+      "city": "Curitiba",
+      "state": "PR",
+      "regionalCode": "PR1",
+      "isDigital": true,
+      "name": "SHOPPING ANÁLIA FRANCO",
+      "code": "353977",
+      "branch": "OPERACOES INTERIOR SP",
+      "totalSpots": 28,
+      "occupiedSpots": 11,
+      "availableSpots": 17,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Empresarial",
+          "value": 1957.34,
+          "totalSpots": 9,
+          "occupiedSpots": 2,
+          "availableSpots": 7,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Estudante",
+          "value": 518.53,
+          "totalSpots": 9,
+          "occupiedSpots": 7,
+          "availableSpots": 2,
+          "status": "inactive"
+        },
+        {
+          "id": "3",
+          "description": "Plano SUV",
+          "value": 1263.42,
+          "totalSpots": 9,
+          "occupiedSpots": 6,
+          "availableSpots": 3,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "address": "Rua XV de Novembro, 400",
+      "city": "Curitiba",
+      "state": "PR",
+      "regionalCode": "PR1",
+      "isDigital": false,
+      "name": "EDIFÍCIO PAULISTA PARK",
+      "code": "742315",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 44,
+      "occupiedSpots": 37,
+      "availableSpots": 7,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Empresarial",
+          "value": 838.76,
+          "totalSpots": 22,
+          "occupiedSpots": 7,
+          "availableSpots": 15,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Rotativo",
+          "value": 1884.92,
+          "totalSpots": 22,
+          "occupiedSpots": 8,
+          "availableSpots": 14,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "address": "Av. Visconde de Guarapuava, 2500",
+      "city": "Curitiba",
+      "state": "PR",
+      "regionalCode": "PR1",
+      "isDigital": true,
+      "name": "SHOPPING INTERLAGOS (NEXT)",
+      "code": "254275",
+      "branch": "OPERACOES SUL",
+      "totalSpots": 82,
+      "occupiedSpots": 4,
+      "availableSpots": 78,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 706.06,
+          "totalSpots": 82,
+          "occupiedSpots": 15,
+          "availableSpots": 67,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "address": "Rua Marechal Deodoro, 700",
+      "city": "Curitiba",
+      "state": "PR",
+      "regionalCode": "PR2",
+      "isDigital": false,
+      "name": "CENTRO COMERCIAL MOOCA",
+      "code": "491438",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 42,
+      "occupiedSpots": 13,
+      "availableSpots": 29,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 617.66,
+          "totalSpots": 42,
+          "occupiedSpots": 35,
+          "availableSpots": 7,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "address": "Av. Batel, 1200",
+      "city": "Curitiba",
+      "state": "PR",
+      "regionalCode": "PR2",
+      "isDigital": true,
+      "name": "SHOPPING ARICANDUVA",
+      "code": "493298",
+      "branch": "FRANQUIAS E PARCERIAS",
+      "totalSpots": 31,
+      "occupiedSpots": 23,
+      "availableSpots": 8,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 939.59,
+          "totalSpots": 31,
+          "occupiedSpots": 18,
+          "availableSpots": 13,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "address": "Av. Afonso Pena, 1500",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "regionalCode": "MG1",
+      "isDigital": true,
+      "name": "EDIFÍCIO REPÚBLICA",
+      "code": "836943",
+      "branch": "OPERACOES SUL",
+      "totalSpots": 98,
+      "occupiedSpots": 93,
+      "availableSpots": 5,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1732.55,
+          "totalSpots": 98,
+          "occupiedSpots": 40,
+          "availableSpots": 58,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "address": "Rua da Bahia, 800",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "regionalCode": "MG1",
+      "isDigital": false,
+      "name": "SHOPPING VILLA-LOBOS",
+      "code": "637622",
+      "branch": "FRANQUIAS E PARCERIAS",
+      "totalSpots": 59,
+      "occupiedSpots": 42,
+      "availableSpots": 17,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Estudante",
+          "value": 1549.63,
+          "totalSpots": 59,
+          "occupiedSpots": 57,
+          "availableSpots": 2,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "address": "Av. do Contorno, 3000",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "regionalCode": "MG1",
+      "isDigital": true,
+      "name": "CENTRO EMPRESARIAL GRANJA VIANA",
+      "code": "617526",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 39,
+      "occupiedSpots": 31,
+      "availableSpots": 8,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1244.94,
+          "totalSpots": 39,
+          "occupiedSpots": 27,
+          "availableSpots": 12,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "address": "Rua Espírito Santo, 450",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "regionalCode": "MG2",
+      "isDigital": false,
+      "name": "SHOPPING BOURBON (C3 PARKING)",
+      "code": "611866",
+      "branch": "OPERACOES INTERIOR SP",
+      "totalSpots": 52,
+      "occupiedSpots": 3,
+      "availableSpots": 49,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1698.2,
+          "totalSpots": 17,
+          "occupiedSpots": 0,
+          "availableSpots": 17,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Plano Executivo",
+          "value": 906.39,
+          "totalSpots": 17,
+          "occupiedSpots": 3,
+          "availableSpots": 14,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Executivo",
+          "value": 1914.72,
+          "totalSpots": 17,
+          "occupiedSpots": 14,
+          "availableSpots": 3,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "address": "Av. Raja Gabaglia, 1000",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "regionalCode": "MG2",
+      "isDigital": true,
+      "name": "EDIFÍCIO BARRA FUNDA",
+      "code": "253299",
+      "branch": "FRANQUIAS E PARCERIAS",
+      "totalSpots": 84,
+      "occupiedSpots": 15,
+      "availableSpots": 69,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1632.15,
+          "totalSpots": 84,
+          "occupiedSpots": 0,
+          "availableSpots": 84,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "address": "Av. Boa Viagem, 2500",
+      "city": "Recife",
+      "state": "PE",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "SHOPPING CONTINENTAL",
+      "code": "534546",
+      "branch": "ADMINISTRACAO E SERVICOS - SP",
+      "totalSpots": 70,
+      "occupiedSpots": 60,
+      "availableSpots": 10,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Padrão",
+          "value": 1609.39,
+          "totalSpots": 70,
+          "occupiedSpots": 34,
+          "availableSpots": 36,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "address": "Rua do Bom Jesus, 200",
+      "city": "Recife",
+      "state": "PE",
+      "regionalCode": "NE",
+      "isDigital": false,
+      "name": "CENTRO COMERCIAL OSASCO",
+      "code": "815826",
+      "branch": "FILIAL MINAS GERAIS",
+      "totalSpots": 24,
+      "occupiedSpots": 0,
+      "availableSpots": 24,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano SUV",
+          "value": 1114.49,
+          "totalSpots": 8,
+          "occupiedSpots": 6,
+          "availableSpots": 2,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Padrão",
+          "value": 1140.77,
+          "totalSpots": 8,
+          "occupiedSpots": 3,
+          "availableSpots": 5,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Rotativo",
+          "value": 634.9,
+          "totalSpots": 8,
+          "occupiedSpots": 6,
+          "availableSpots": 2,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "address": "Av. Agamenon Magalhães, 1800",
+      "city": "Recife",
+      "state": "PE",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "SHOPPING METRÔ SANTA CRUZ",
+      "code": "567592",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 69,
+      "occupiedSpots": 29,
+      "availableSpots": 40,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Moto",
+          "value": 768.49,
+          "totalSpots": 34,
+          "occupiedSpots": 34,
+          "availableSpots": 0,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Plano Moto",
+          "value": 746.23,
+          "totalSpots": 34,
+          "occupiedSpots": 29,
+          "availableSpots": 5,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "address": "Rua da Aurora, 600",
+      "city": "Recife",
+      "state": "PE",
+      "regionalCode": "NE",
+      "isDigital": false,
+      "name": "EDIFÍCIO ALAMEDA SANTOS",
+      "code": "787188",
+      "branch": "OPERACOES CENTRO-OESTE",
+      "totalSpots": 56,
+      "occupiedSpots": 6,
+      "availableSpots": 50,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Padrão",
+          "value": 1139.69,
+          "totalSpots": 56,
+          "occupiedSpots": 45,
+          "availableSpots": 11,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "address": "Av. Conde da Boa Vista, 900",
+      "city": "Recife",
+      "state": "PE",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "SHOPPING PLAZA SUL",
+      "code": "636330",
+      "branch": "FRANQUIAS E PARCERIAS",
+      "totalSpots": 51,
+      "occupiedSpots": 2,
+      "availableSpots": 49,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Executivo",
+          "value": 887.27,
+          "totalSpots": 17,
+          "occupiedSpots": 6,
+          "availableSpots": 11,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Plano Empresarial",
+          "value": 1473.94,
+          "totalSpots": 17,
+          "occupiedSpots": 4,
+          "availableSpots": 13,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Empresarial",
+          "value": 1830.84,
+          "totalSpots": 17,
+          "occupiedSpots": 8,
+          "availableSpots": 9,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "address": "Av. Tancredo Neves, 3500",
+      "city": "Salvador",
+      "state": "BA",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "CENTRO EMPRESARIAL ALPHAVILLE",
+      "code": "715987",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 98,
+      "occupiedSpots": 86,
+      "availableSpots": 12,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Executivo",
+          "value": 1866.63,
+          "totalSpots": 98,
+          "occupiedSpots": 69,
+          "availableSpots": 29,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "address": "Rua Chile, 400",
+      "city": "Salvador",
+      "state": "BA",
+      "regionalCode": "NE",
+      "isDigital": false,
+      "name": "SHOPPING HIGIENÓPOLIS",
+      "code": "384078",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 82,
+      "occupiedSpots": 4,
+      "availableSpots": 78,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Executivo",
+          "value": 764.88,
+          "totalSpots": 41,
+          "occupiedSpots": 1,
+          "availableSpots": 40,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Final de Semana",
+          "value": 1207.34,
+          "totalSpots": 41,
+          "occupiedSpots": 28,
+          "availableSpots": 13,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "address": "Av. Sete de Setembro, 2000",
+      "city": "Salvador",
+      "state": "BA",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "EDIFÍCIO FARIA LIMA SQUARE",
+      "code": "490843",
+      "branch": "OPERACOES INTERIOR SP",
+      "totalSpots": 79,
+      "occupiedSpots": 44,
+      "availableSpots": 35,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Estudante",
+          "value": 1042.03,
+          "totalSpots": 39,
+          "occupiedSpots": 35,
+          "availableSpots": 4,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Noturno",
+          "value": 1019.88,
+          "totalSpots": 39,
+          "occupiedSpots": 7,
+          "availableSpots": 32,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "address": "Rua Carlos Gomes, 700",
+      "city": "Salvador",
+      "state": "BA",
+      "regionalCode": "NE",
+      "isDigital": false,
+      "name": "SHOPPING CAMPO LIMPO (GMC PARK)",
+      "code": "516121",
+      "branch": "OPERACOES SUL",
+      "totalSpots": 89,
+      "occupiedSpots": 7,
+      "availableSpots": 82,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1968.93,
+          "totalSpots": 89,
+          "occupiedSpots": 0,
+          "availableSpots": 89,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "address": "Av. Oceânica, 1500",
+      "city": "Salvador",
+      "state": "BA",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "CENTRO COMERCIAL SANTO ANDRÉ",
+      "code": "738630",
+      "branch": "OPERACOES INTERIOR SP",
+      "totalSpots": 30,
+      "occupiedSpots": 25,
+      "availableSpots": 5,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano Rotativo",
+          "value": 1508.14,
+          "totalSpots": 15,
+          "occupiedSpots": 2,
+          "availableSpots": 13,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Empresarial",
+          "value": 1713.49,
+          "totalSpots": 15,
+          "occupiedSpots": 13,
+          "availableSpots": 2,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "address": "Av. Beira Mar, 1000",
+      "city": "Fortaleza",
+      "state": "CE",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "SHOPPING METRÔ BROOKLIN",
+      "code": "214024",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 79,
+      "occupiedSpots": 73,
+      "availableSpots": 6,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 930.05,
+          "totalSpots": 79,
+          "occupiedSpots": 58,
+          "availableSpots": 21,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "address": "Rua Monsenhor Tabosa, 500",
+      "city": "Fortaleza",
+      "state": "CE",
+      "regionalCode": "NE",
+      "isDigital": false,
+      "name": "EDIFÍCIO NAÇÕES UNIDAS",
+      "code": "864214",
+      "branch": "FILIAL NORDESTE",
+      "totalSpots": 70,
+      "occupiedSpots": 62,
+      "availableSpots": 8,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 1765.1,
+          "totalSpots": 23,
+          "occupiedSpots": 14,
+          "availableSpots": 9,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Plano Rotativo",
+          "value": 1522.79,
+          "totalSpots": 23,
+          "occupiedSpots": 0,
+          "availableSpots": 23,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Mensalista Estudante",
+          "value": 1623.07,
+          "totalSpots": 23,
+          "occupiedSpots": 10,
+          "availableSpots": 13,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "address": "Av. Santos Dumont, 2200",
+      "city": "Fortaleza",
+      "state": "CE",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "SHOPPING ABC",
+      "code": "807353",
+      "branch": "ADMINISTRACAO RIO DE JANEIRO",
+      "totalSpots": 56,
+      "occupiedSpots": 20,
+      "availableSpots": 36,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Plano SUV",
+          "value": 1072.44,
+          "totalSpots": 56,
+          "occupiedSpots": 48,
+          "availableSpots": 8,
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "address": "Rua Major Facundo, 300",
+      "city": "Fortaleza",
+      "state": "CE",
+      "regionalCode": "NE",
+      "isDigital": false,
+      "name": "CENTRO EMPRESARIAL GUARULHOS",
+      "code": "505820",
+      "branch": "ADMINISTRACAO E SERVICOS - SP",
+      "totalSpots": 77,
+      "occupiedSpots": 37,
+      "availableSpots": 40,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Noturno",
+          "value": 1780.16,
+          "totalSpots": 25,
+          "occupiedSpots": 1,
+          "availableSpots": 24,
+          "status": "inactive"
+        },
+        {
+          "id": "2",
+          "description": "Plano Moto",
+          "value": 1863.61,
+          "totalSpots": 25,
+          "occupiedSpots": 19,
+          "availableSpots": 6,
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "description": "Plano Moto",
+          "value": 1567.75,
+          "totalSpots": 25,
+          "occupiedSpots": 4,
+          "availableSpots": 21,
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "address": "Av. Domingos Olímpio, 800",
+      "city": "Fortaleza",
+      "state": "CE",
+      "regionalCode": "NE",
+      "isDigital": true,
+      "name": "SHOPPING METRÔ TATUAPÉ",
+      "code": "146843",
+      "branch": "ADMINISTRACAO E SERVICOS - SP",
+      "totalSpots": 77,
+      "occupiedSpots": 17,
+      "availableSpots": 60,
+      "plans": [
+        {
+          "id": "1",
+          "description": "Mensalista Final de Semana",
+          "value": 1189.4,
+          "totalSpots": 38,
+          "occupiedSpots": 24,
+          "availableSpots": 14,
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "description": "Mensalista Estudante",
+          "value": 1462.69,
+          "totalSpots": 38,
+          "occupiedSpots": 20,
+          "availableSpots": 18,
+          "status": "active"
+        }
+      ]
     }
   ]
 }
