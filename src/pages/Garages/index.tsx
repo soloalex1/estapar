@@ -14,6 +14,7 @@ import useGarages from '../../hooks/useGarages';
 import SidebarContext from '../../contexts/SidebarContext';
 
 import type { Filters } from '../../components/Filters/types';
+import GarageDetails from '../../components/Details';
 
 const GaragesPage = () => {
   const navigate = useNavigate();
@@ -53,6 +54,7 @@ const GaragesPage = () => {
 };
 
 const GaragesTableWrapper = () => {
+  const [selectedGarageId, setSelectedGarageId] = useState<string | null>(null);
   const [filters, setFilters] = useState<Filters>({
     isDigital: true,
     search: '',
@@ -62,14 +64,12 @@ const GaragesTableWrapper = () => {
     garages,
     isLoading,
     error,
-    deleteGarage,
     pagination: { page, pages, total, setPage },
   } = useGarages(filters);
 
-  const handleEdit = () => {};
-
-  const handleDelete = (id: string) => {
-    deleteGarage(id);
+  const handleOpenDetails = (id: string) => {
+    console.log('garage id:', id);
+    setSelectedGarageId(id);
   };
 
   if (error) {
@@ -84,8 +84,7 @@ const GaragesTableWrapper = () => {
         <GaragesCardView
           data={garages}
           isLoading={isLoading}
-          onDelete={handleDelete}
-          onEdit={handleEdit}
+          onOpenDetails={handleOpenDetails}
         />
       </div>
 
@@ -93,10 +92,14 @@ const GaragesTableWrapper = () => {
         <Table
           data={garages}
           isLoading={isLoading}
-          onEdit={handleEdit}
-          onDelete={handleDelete}
+          onOpenDetails={handleOpenDetails}
         />
       </div>
+
+      <GarageDetails
+        garageId={selectedGarageId}
+        onClose={() => setSelectedGarageId(null)}
+      />
 
       <Pagination
         page={page}
