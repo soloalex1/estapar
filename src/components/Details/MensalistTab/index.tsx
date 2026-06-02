@@ -1,3 +1,4 @@
+import NiceModal from '@ebay/nice-modal-react';
 import {
   CurrencyDollarIcon,
   PercentBadgeIcon,
@@ -11,11 +12,18 @@ import PlansTable from '../PlansTable';
 
 import type { GarageDetails } from '../../../services/garages/types';
 
+import { MODAL_IDS } from '../../../modals';
+
 type MensalistTabProps = {
   details: GarageDetails;
+  onSuccess: () => void;
 };
 
-const MensalistTab = ({ details }: MensalistTabProps) => {
+const MensalistTab = ({ details, onSuccess }: MensalistTabProps) => {
+  const handleNewPlanClick = () => {
+    NiceModal.show(MODAL_IDS.PLAN, { garageId: details.id, onSuccess });
+  };
+
   const renderMetricsSection = () => {
     return (
       <section
@@ -94,14 +102,17 @@ const MensalistTab = ({ details }: MensalistTabProps) => {
             <h3 className="text-base font-semibold text-gray-800">
               Planos Disponíveis
             </h3>
-            <button className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-green-600 border border-green-500 rounded-lg hover:bg-green-50 transition-colors">
+            <button
+              onClick={handleNewPlanClick}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-green-600 border border-green-500 rounded-lg hover:bg-green-50 transition-colors"
+            >
               <PlusIcon className="w-4 h-4" />
               Novo Plano
             </button>
           </div>
 
           <div className="rounded-lg border border-gray-200 overflow-hidden">
-            <PlansTable plans={details.plans} />
+            <PlansTable plans={details.plans} onSuccess={onSuccess} />
           </div>
         </div>
       </div>

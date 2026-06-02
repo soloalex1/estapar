@@ -1,9 +1,13 @@
+import NiceModal from '@ebay/nice-modal-react';
 import { UserGroupIcon, PencilSquareIcon } from '@heroicons/react/24/outline';
 
-import type { GaragePlan } from '../../../services/garages/types';
+import type { Plan } from '../../../services/plans/types';
+
+import { MODAL_IDS } from '../../../modals';
 
 type PlansTableProps = {
-  plans: GaragePlan[];
+  plans: Plan[];
+  onSuccess: () => void;
 };
 
 const HEADERS = [
@@ -16,7 +20,16 @@ const HEADERS = [
   'Ações',
 ];
 
-const PlansTable = ({ plans }: PlansTableProps) => {
+const PlansTable = ({ plans, onSuccess }: PlansTableProps) => {
+  const handleEditClick = (plan: Plan) => {
+    console.log('edit modal');
+    NiceModal.show(MODAL_IDS.PLAN, {
+      plan,
+      garageId: plan.garageId,
+      onSuccess,
+    });
+  };
+
   return (
     <table className="w-full text-sm text-left">
       <thead className="bg-gray-50 border-b border-gray-200">
@@ -40,14 +53,25 @@ const PlansTable = ({ plans }: PlansTableProps) => {
             </td>
           </tr>
         ) : (
-          plans.map((plan) => <PlanRow key={plan.id} plan={plan} />)
+          plans.map((plan) => (
+            <PlanRow
+              key={plan.id}
+              plan={plan}
+              onEdit={() => handleEditClick(plan)}
+            />
+          ))
         )}
       </tbody>
     </table>
   );
 };
 
-const PlanRow = ({ plan }: { plan: GaragePlan }) => {
+type PlanRowProps = {
+  plan: Plan;
+  onEdit: () => void;
+};
+
+const PlanRow = ({ plan, onEdit }: PlanRowProps) => {
   return (
     <tr className="hover:bg-gray-50 transition-colors">
       <td className="px-4 py-3 text-gray-700">
@@ -78,9 +102,10 @@ const PlanRow = ({ plan }: { plan: GaragePlan }) => {
       </td>
       <td className="px-4 py-3">
         <button
-          aria-label={`Editar plano ${plan.description}`}
+          onClick={onEdit}
           className="p-1 rounded hover:bg-gray-100 transition-colors"
         >
+          <span className="sr-only">Editar plano</span>
           <PencilSquareIcon className="w-4 h-4 text-gray-500" />
         </button>
       </td>
