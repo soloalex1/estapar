@@ -68,7 +68,6 @@ const GaragesTableWrapper = () => {
   } = useGarages(filters);
 
   const handleOpenDetails = (id: string) => {
-    console.log('garage id:', id);
     setSelectedGarageId(id);
   };
 

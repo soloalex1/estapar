@@ -11,11 +11,11 @@ import PlansTable from '../PlansTable';
 
 import type { GarageDetails } from '../../../services/garages/types';
 
-type PlansTabProps = {
+type MensalistTabProps = {
   details: GarageDetails;
 };
 
-const PlansTab = ({ details }: PlansTabProps) => {
+const MensalistTab = ({ details }: MensalistTabProps) => {
   const renderMetricsSection = () => {
     return (
       <section
@@ -57,7 +57,7 @@ const PlansTab = ({ details }: PlansTabProps) => {
     <div className="flex gap-6">
       <nav
         aria-labelledby="plans-tab-label"
-        className="flex flex-col gap-1 w-40 shrink-0"
+        className="flex flex-col gap-1 w-50 shrink-0 bg-white-surface border border-gray-200 rounded-lg"
       >
         <span id="plans-tab-label" className="sr-only">
           Selecione uma seção
@@ -65,16 +65,22 @@ const PlansTab = ({ details }: PlansTabProps) => {
         <ul>
           <li>
             <SideNavItem
-              icon={<CurrencyDollarIcon />}
+              icon={<CurrencyDollarIcon className="w-5 h-5 text-gray-500" />}
               label="Planos"
               isActive
             />
           </li>
           <li>
-            <SideNavItem icon={<PercentBadgeIcon />} label="Descontos" />
+            <SideNavItem
+              icon={<PercentBadgeIcon className="w-5 h-5 text-gray-500" />}
+              label="Descontos"
+            />
           </li>
           <li>
-            <SideNavItem icon={<Cog6ToothIcon />} label="Configurações" />
+            <SideNavItem
+              icon={<Cog6ToothIcon className="w-5 h-5 text-gray-500" />}
+              label="Configurações"
+            />
           </li>
         </ul>
       </nav>
@@ -103,4 +109,4 @@ const PlansTab = ({ details }: PlansTabProps) => {
   );
 };
 
-export default PlansTab;
+export default MensalistTab;
