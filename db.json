@@ -719,18 +719,15 @@
   ],
   "plans": [
     {
-      "id": "1",
       "garageId": "1",
       "description": "Mensalista Noturno",
-      "status": "active",
       "vehicleType": "motorcycle",
       "totalSpots": 67,
-      "occupiedSpots": 17,
-      "availableSpots": 50,
       "value": 1463.4,
       "cancellationValue": 146.34,
       "validFrom": "2026-06-02",
-      "validUntil": "2026-08-23"
+      "validUntil": "2026-08-23",
+      "id": "1"
     },
     {
       "id": "2",
