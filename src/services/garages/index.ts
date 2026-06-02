@@ -1,4 +1,5 @@
-import type { Garage, GarageInsert } from './types';
+import type { Garage, GarageDetails } from './types';
+import type { Plan } from '../plans/types';
 
 const BASE_URL = '/api/garages';
 
@@ -47,31 +48,22 @@ export const getGarages = async ({
   return { data, total, pages };
 };
 
-export const getGarageById = async (id: string): Promise<Garage> => {
-  const response = await fetch(`${BASE_URL}/${id}`);
+export const getGarageDetails = async (id: string): Promise<GarageDetails> => {
+  const [garageResponse, plansResponse] = await Promise.all([
+    fetch(`${BASE_URL}/${id}`),
+    fetch(`/api/plans?garageId=${id}`),
+  ]);
 
-  if (!response.ok) {
-    throw new Error(`Erro ao obter detalhes da garagem.`);
+  if (!garageResponse.ok) {
+    throw new Error('Erro ao obter detalhes da garagem.');
   }
 
-  return response.json();
-};
-
-export const createGarage = async (garage: GarageInsert): Promise<Garage> => {
-  const response = await fetch(BASE_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(garage),
-  });
-
-  if (!response.ok) {
-    throw new Error('Erro ao criar garagem.');
+  if (!plansResponse.ok) {
+    throw new Error('Erro ao obter planos da garagem.');
   }
 
-  return response.json();
-};
+  const garage = await garageResponse.json();
+  const plans: Plan[] = await plansResponse.json();
 
-export const deleteGarage = async (id: string): Promise<void> => {
-  const response = await fetch(`${BASE_URL}/${id}`, { method: 'DELETE' });
-  if (!response.ok) throw new Error('Erro ao deletar garagem.');
+  return { ...garage, plans };
 };

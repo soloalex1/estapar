@@ -14,6 +14,7 @@ import useGarages from '../../hooks/useGarages';
 import SidebarContext from '../../contexts/SidebarContext';
 
 import type { Filters } from '../../components/Filters/types';
+import GarageDetails from '../../components/Details';
 
 const GaragesPage = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const GaragesPage = () => {
   return (
     <section
       aria-labelledby="garages-title"
-      className={`w-full h-full mt-16 lg:mt-20 flex flex-col items-start justify-start gap-2 pl-22 pr-4 ${isCollapsed ? 'md:px-24' : 'md:pl-72 md:pr-16'} transition-all duration-300`}
+      className={`w-full h-full mt-16 lg:mt-20 flex flex-col items-start justify-start gap-2 pl-22 pr-4 md:pr-10 ${isCollapsed ? 'md:pl-24' : 'md:pl-72'} transition-all duration-300`}
     >
       <button
         onClick={goBack}
@@ -53,6 +54,7 @@ const GaragesPage = () => {
 };
 
 const GaragesTableWrapper = () => {
+  const [selectedGarageId, setSelectedGarageId] = useState<string | null>(null);
   const [filters, setFilters] = useState<Filters>({
     isDigital: true,
     search: '',
@@ -62,14 +64,11 @@ const GaragesTableWrapper = () => {
     garages,
     isLoading,
     error,
-    deleteGarage,
     pagination: { page, pages, total, setPage },
   } = useGarages(filters);
 
-  const handleEdit = () => {};
-
-  const handleDelete = (id: string) => {
-    deleteGarage(id);
+  const handleOpenDetails = (id: string) => {
+    setSelectedGarageId(id);
   };
 
   if (error) {
@@ -84,8 +83,7 @@ const GaragesTableWrapper = () => {
         <GaragesCardView
           data={garages}
           isLoading={isLoading}
-          onDelete={handleDelete}
-          onEdit={handleEdit}
+          onOpenDetails={handleOpenDetails}
         />
       </div>
 
@@ -93,10 +91,14 @@ const GaragesTableWrapper = () => {
         <Table
           data={garages}
           isLoading={isLoading}
-          onEdit={handleEdit}
-          onDelete={handleDelete}
+          onOpenDetails={handleOpenDetails}
         />
       </div>
+
+      <GarageDetails
+        garageId={selectedGarageId}
+        onClose={() => setSelectedGarageId(null)}
+      />
 
       <Pagination
         page={page}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { getGarages, deleteGarage } from '../../services/garages';
+import { getGarages } from '../../services/garages';
 
 import useDebounce from '../useDebounce';
 
@@ -51,7 +51,6 @@ const useGarages = (filters: Partial<Filters> = {}): UseGaragesReturn => {
     garages: isSuccessful ? state.data : [],
     isLoading: state.status === 'idle',
     error: state.status === 'error' ? state.message : null,
-    deleteGarage,
     pagination: {
       page,
       pages: isSuccessful ? state.pages : 0,

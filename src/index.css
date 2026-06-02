@@ -6,6 +6,14 @@
   --color-white-surface: #f9fafb;
 }
 
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full overflow-hidden;
+  }
+}
+
 :root {
   font-family: 'Inter', sans-serif;
 }
