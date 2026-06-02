@@ -93,9 +93,9 @@ const PlansModal = NiceModal.create(
               </div>
               <button
                 onClick={() => modal.hide()}
-                aria-label="Fechar modal"
                 className="p-1.5 rounded-lg hover:bg-gray-100 transition-colors"
               >
+                <span className="sr-only">Fechar modal</span>
                 <XMarkIcon className="w-5 h-5 text-gray-400" />
               </button>
             </div>
@@ -107,6 +107,7 @@ const PlansModal = NiceModal.create(
                 <div className="grid grid-cols-2 gap-4">
                   <Input
                     label="Descrição"
+                    id="description-field"
                     name="description"
                     placeholder="Digite a descrição do plano"
                     defaultValue={plan?.description ?? ''}
@@ -152,6 +153,7 @@ const PlansModal = NiceModal.create(
                     label="Total de Vagas"
                     name="totalSpots"
                     type="number"
+                    id="spots-field"
                     min="1"
                     defaultValue={String(plan?.totalSpots ?? 1)}
                     required
@@ -164,6 +166,7 @@ const PlansModal = NiceModal.create(
                     label="Valor (R$)"
                     name="value"
                     type="number"
+                    id="value-field"
                     min="0"
                     step="0.01"
                     defaultValue={String(plan?.value ?? 0)}
@@ -173,6 +176,7 @@ const PlansModal = NiceModal.create(
                     label="Valor do Cancelamento (R$)"
                     name="cancellationValue"
                     type="number"
+                    id="cancellation-field"
                     min="0"
                     step="0.01"
                     defaultValue={String(plan?.cancellationValue ?? 0)}
@@ -186,6 +190,7 @@ const PlansModal = NiceModal.create(
                     label="Início da Validade"
                     name="validFrom"
                     type="date"
+                    id="validfrom-field"
                     defaultValue={
                       plan?.validFrom ?? new Date().toISOString().split('T')[0]
                     }
@@ -194,6 +199,7 @@ const PlansModal = NiceModal.create(
                   <Input
                     label="Fim da Validade"
                     name="validUntil"
+                    id="validuntil-field"
                     type="date"
                     defaultValue={plan?.validUntil ?? ''}
                   />
