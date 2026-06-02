@@ -4,6 +4,7 @@ import { UserGroupIcon, PencilSquareIcon } from '@heroicons/react/24/outline';
 import type { Plan } from '../../../services/plans/types';
 
 import { MODAL_IDS } from '../../../modals';
+import type { ReactNode } from 'react';
 
 type PlansTableProps = {
   plans: Plan[];
@@ -11,18 +12,17 @@ type PlansTableProps = {
 };
 
 const HEADERS = [
-  'Descrição',
-  'Valor',
-  'Vagas',
-  'Ocupadas',
-  'Disponíveis',
-  'Status',
-  'Ações',
+  { label: 'Descrição', width: '25' },
+  { label: 'Valor', width: '15' },
+  { label: 'Vagas', width: '8' },
+  { label: 'Ocupadas', width: '8' },
+  { label: 'Disponíveis', width: '8' },
+  { label: 'Status', width: '10' },
+  { label: 'Ações', width: '8' },
 ];
 
 const PlansTable = ({ plans, onSuccess }: PlansTableProps) => {
   const handleEditClick = (plan: Plan) => {
-    console.log('edit modal');
     NiceModal.show(MODAL_IDS.PLAN, {
       plan,
       garageId: plan.garageId,
@@ -34,13 +34,14 @@ const PlansTable = ({ plans, onSuccess }: PlansTableProps) => {
     <table className="w-full text-sm text-left">
       <thead className="bg-gray-50 border-b border-gray-200">
         <tr>
-          {HEADERS.map((h) => (
+          {HEADERS.map(({ label, width }) => (
             <th
-              key={h}
+              key={label}
               scope="col"
+              style={width ? { width: `${width}%` } : {}}
               className="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wide"
             >
-              {h}
+              {label}
             </th>
           ))}
         </tr>
@@ -74,22 +75,22 @@ type PlanRowProps = {
 const PlanRow = ({ plan, onEdit }: PlanRowProps) => {
   return (
     <tr className="hover:bg-gray-50 transition-colors">
-      <td className="px-4 py-3 text-gray-700">
+      <Td>
         <div className="flex items-center gap-2">
           <UserGroupIcon className="w-4 h-4 text-gray-400" />
           {plan.description}
         </div>
-      </td>
-      <td className="px-4 py-3 text-gray-700">
+      </Td>
+      <Td>
         {plan.value.toLocaleString('pt-BR', {
           style: 'currency',
           currency: 'BRL',
         })}
-      </td>
-      <td className="px-4 py-3 text-gray-700">{plan.totalSpots}</td>
-      <td className="px-4 py-3 text-gray-700">{plan.occupiedSpots}</td>
-      <td className="px-4 py-3 text-gray-700">{plan.availableSpots}</td>
-      <td className="px-4 py-3">
+      </Td>
+      <Td>{plan.totalSpots}</Td>
+      <Td>{plan.occupiedSpots}</Td>
+      <Td>{plan.availableSpots}</Td>
+      <Td>
         <span
           className={`inline-flex px-2 py-0.5 rounded-full text-xs font-medium ${
             plan.status === 'active'
@@ -99,8 +100,8 @@ const PlanRow = ({ plan, onEdit }: PlanRowProps) => {
         >
           {plan.status === 'active' ? 'Ativo' : 'Inativo'}
         </span>
-      </td>
-      <td className="px-4 py-3">
+      </Td>
+      <Td>
         <button
           onClick={onEdit}
           className="p-1 rounded hover:bg-gray-100 transition-colors"
@@ -108,8 +109,16 @@ const PlanRow = ({ plan, onEdit }: PlanRowProps) => {
           <span className="sr-only">Editar plano</span>
           <PencilSquareIcon className="w-4 h-4 text-gray-500" />
         </button>
-      </td>
+      </Td>
     </tr>
+  );
+};
+
+const Td = ({ children }: { children: ReactNode }) => {
+  return (
+    <td className="px-4 py-3 text-gray-700 max-w-0 overflow-hidden text-ellipsis whitespace-nowrap">
+      {children}
+    </td>
   );
 };
 

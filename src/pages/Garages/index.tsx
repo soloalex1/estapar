@@ -27,7 +27,7 @@ const GaragesPage = () => {
   return (
     <section
       aria-labelledby="garages-title"
-      className={`w-full h-full mt-16 lg:mt-20 flex flex-col items-start justify-start gap-2 pl-22 pr-4 ${isCollapsed ? 'md:px-24' : 'md:pl-72 md:pr-16'} transition-all duration-300`}
+      className={`w-full h-full mt-16 lg:mt-20 flex flex-col items-start justify-start gap-2 pl-22 pr-4 md:pr-10 ${isCollapsed ? 'md:pl-24' : 'md:pl-72'} transition-all duration-300`}
     >
       <button
         onClick={goBack}
