@@ -21,7 +21,9 @@ type GarageSidesheetProps = {
 
 const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
   const [activeTab, setActiveTab] = useState('mensalist');
-  const { details, isLoading, error } = useGarageDetails(garageId ?? '');
+  const { details, isLoading, error, revalidate } = useGarageDetails(
+    garageId ?? '',
+  );
 
   const isOpen = !!garageId;
 
@@ -30,8 +32,6 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
       onClose();
     }
   };
-
-  const handleSubmitSuccess = () => {};
 
   return (
     <>
@@ -135,10 +135,7 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
 
               <div className="flex-1 overflow-y-auto px-8 py-6">
                 {activeTab === 'mensalist' && (
-                  <MensalistTab
-                    details={details}
-                    onSuccess={handleSubmitSuccess}
-                  />
+                  <MensalistTab details={details} onSuccess={revalidate} />
                 )}
               </div>
             </>
