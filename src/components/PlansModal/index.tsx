@@ -81,8 +81,8 @@ const PlansModal = NiceModal.create(
             </button>
           </div>
 
-          {/* Form */}
-          <form action={submitAction}>
+          {/* Force-remounting when plan changes to correctly apply defaultValue */}
+          <form key={plan?.id ?? 'new'} action={submitAction}>
             <div className="px-6 pb-4 flex flex-col gap-5">
               {/* Descrição + Status */}
               <div className="grid grid-cols-2 gap-4">
@@ -90,7 +90,7 @@ const PlansModal = NiceModal.create(
                   label="Descrição"
                   name="description"
                   placeholder="Digite a descrição do plano"
-                  defaultValue={plan?.description}
+                  defaultValue={plan?.description ?? ''}
                   required
                 />
 
@@ -99,6 +99,7 @@ const PlansModal = NiceModal.create(
                     Status
                   </label>
                   <Toggle
+                    type="button"
                     label={isPlanActive ? 'Ativo' : 'Inativo'}
                     checked={isPlanActive}
                     onChange={setPlanActive}

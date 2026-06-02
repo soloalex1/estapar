@@ -31,6 +31,8 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
     }
   };
 
+  const handleSubmitSuccess = () => {};
+
   return (
     <>
       <div
@@ -133,7 +135,10 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
 
               <div className="flex-1 overflow-y-auto px-8 py-6">
                 {activeTab === 'mensalist' && (
-                  <MensalistTab details={details} />
+                  <MensalistTab
+                    details={details}
+                    onSuccess={handleSubmitSuccess}
+                  />
                 )}
               </div>
             </>
