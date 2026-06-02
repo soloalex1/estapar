@@ -19,6 +19,7 @@ const GarageCard = ({ garage, onOpenDetails }: GarageCardProps) => {
           <span className="font-mono text-xs text-gray-400">{garage.code}</span>
         </div>
         <button onClick={() => onOpenDetails(garage.id)}>
+          <span className="sr-only">Detalhes</span>
           <EyeIcon className="w-5 h-5 text-gray-500 hover:text-brand" />
         </button>
       </div>

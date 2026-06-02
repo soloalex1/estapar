@@ -1,4 +1,4 @@
-import type { Garage, GarageDetails, GarageInsert } from './types';
+import type { Garage, GarageDetails } from './types';
 import type { Plan } from '../plans/types';
 
 const BASE_URL = '/api/garages';
@@ -66,23 +66,4 @@ export const getGarageDetails = async (id: string): Promise<GarageDetails> => {
   const plans: Plan[] = await plansResponse.json();
 
   return { ...garage, plans };
-};
-
-export const createGarage = async (garage: GarageInsert): Promise<Garage> => {
-  const response = await fetch(BASE_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(garage),
-  });
-
-  if (!response.ok) {
-    throw new Error('Erro ao criar garagem.');
-  }
-
-  return response.json();
-};
-
-export const deleteGarage = async (id: string): Promise<void> => {
-  const response = await fetch(`${BASE_URL}/${id}`, { method: 'DELETE' });
-  if (!response.ok) throw new Error('Erro ao deletar garagem.');
 };

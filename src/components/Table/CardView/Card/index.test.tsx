@@ -16,12 +16,11 @@ const mockGarage: Garage = {
   isDigital: true,
 };
 
-const mockOnEdit = jest.fn();
-const mockOnDelete = jest.fn();
+const mockOnOpenDetails = jest.fn();
 
 const renderGarageCard = (garage: Garage = mockGarage) => {
   return render(
-    <GarageCard garage={garage} onEdit={mockOnEdit} onDelete={mockOnDelete} />,
+    <GarageCard garage={garage} onOpenDetails={mockOnOpenDetails} />,
   );
 };
 
@@ -46,17 +45,15 @@ describe('GarageCard', () => {
     expect(regionalCodeElement).toBeInTheDocument();
   });
 
-  it('should render the action menu when clicking on actions button', async () => {
+  it('should open the details sidesheet when clicking on actions button', async () => {
     renderGarageCard();
 
-    const actionsButton = screen.getByRole('button', {
-      name: /ações para garage 1/i,
+    const detailsButton = screen.getByRole('button', {
+      name: /detalhes/i,
     });
 
-    await userEvent.click(actionsButton);
+    await userEvent.click(detailsButton);
 
-    const menu = await screen.findByRole('menu');
-
-    expect(menu).toBeInTheDocument();
+    expect(mockOnOpenDetails).toHaveBeenCalledWith(mockGarage.id);
   });
 });

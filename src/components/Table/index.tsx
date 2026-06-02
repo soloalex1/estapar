@@ -49,6 +49,7 @@ const Table = ({ data, isLoading, onOpenDetails }: GaragesTableProps) => {
                 <Td>{garage.regionalCode}</Td>
                 <Td>
                   <button onClick={() => onOpenDetails(garage.id)}>
+                    <span className="sr-only">Detalhes</span>
                     <EyeIcon className="w-5 h-5 text-blue-500 hover:text-brand" />
                   </button>
                 </Td>

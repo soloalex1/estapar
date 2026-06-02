@@ -1,4 +1,4 @@
-import { createGarage, deleteGarage, getGarageById, getGarages } from '.';
+import { getGarageDetails, getGarages } from '.';
 
 describe('Garages Service', () => {
   const mockFetch = jest.fn();
@@ -81,7 +81,7 @@ describe('Garages Service', () => {
     });
   });
 
-  describe('getGarageById', () => {
+  describe('getGarageDetails', () => {
     it('should fetch details about a garage given its ID', async () => {
       const mockGarage = {
         id: '1',
@@ -94,14 +94,33 @@ describe('Garages Service', () => {
         isDigital: true,
       };
 
-      mockFetch.mockResolvedValueOnce({
-        ok: true,
-        json: async () => mockGarage,
-      });
+      const mockPlans = [
+        {
+          garageId: '1',
+          description: 'Mensalista Noturno',
+          vehicleType: 'motorcycle',
+          totalSpots: 67,
+          value: 1463.4,
+          cancellationValue: 146.34,
+          validFrom: '2026-06-02',
+          validUntil: '2026-08-23',
+          id: '1',
+        },
+      ];
 
-      const result = await getGarageById('1');
+      mockFetch
+        .mockResolvedValueOnce({
+          ok: true,
+          json: async () => mockGarage,
+        })
+        .mockResolvedValueOnce({
+          ok: true,
+          json: async () => mockPlans,
+        });
 
-      expect(result).toEqual(mockGarage);
+      const result = await getGarageDetails('1');
+
+      expect(result).toEqual({ ...mockGarage, plans: mockPlans });
     });
 
     it('should throw an error if the garage is not found', async () => {
@@ -110,7 +129,7 @@ describe('Garages Service', () => {
         json: async () => ({ message: 'Erro ao obter detalhes da garagem.' }),
       });
 
-      await expect(getGarageById('999')).rejects.toThrow(
+      await expect(getGarageDetails('999')).rejects.toThrow(
         'Erro ao obter detalhes da garagem.',
       );
     });
@@ -121,77 +140,8 @@ describe('Garages Service', () => {
         json: async () => ({ message: 'Erro ao obter detalhes da garagem.' }),
       });
 
-      await expect(getGarageById('invalid-id')).rejects.toThrow(
+      await expect(getGarageDetails('invalid-id')).rejects.toThrow(
         'Erro ao obter detalhes da garagem.',
-      );
-    });
-  });
-
-  describe('createGarage', () => {
-    it('should create a new garage and return its details', async () => {
-      const newGarage = {
-        name: 'Garage C',
-        code: 'GC789',
-        address: '789 Pine Rd',
-        city: 'CityY',
-        state: 'StateZ',
-        regionalCode: 'RC3',
-        isDigital: false,
-      };
-
-      const createdGarage = { id: '3', ...newGarage };
-
-      mockFetch.mockResolvedValueOnce({
-        ok: true,
-        json: async () => createdGarage,
-      });
-
-      const result = await createGarage(newGarage);
-
-      expect(result).toEqual(createdGarage);
-    });
-
-    it('should throw an error if the API call fails', async () => {
-      const newGarage = {
-        name: 'Garage C',
-        code: 'GC789',
-        address: '789 Pine Rd',
-        city: 'CityY',
-        state: 'StateZ',
-        regionalCode: 'RC3',
-        isDigital: false,
-      };
-
-      mockFetch.mockResolvedValueOnce({
-        ok: false,
-        json: async () => ({ message: 'Erro ao criar garagem.' }),
-      });
-
-      await expect(createGarage(newGarage)).rejects.toThrow(
-        'Erro ao criar garagem.',
-      );
-    });
-  });
-
-  describe('deleteGarage', () => {
-    it('should delete a garage given its ID', async () => {
-      mockFetch.mockResolvedValueOnce({
-        ok: true,
-      });
-
-      await deleteGarage('1');
-      expect(mockFetch).toHaveBeenCalledWith('/api/garages/1', {
-        method: 'DELETE',
-      });
-    });
-
-    it('should throw an error if the garage cannot be deleted', async () => {
-      mockFetch.mockResolvedValueOnce({
-        ok: false,
-      });
-
-      await expect(deleteGarage('1')).rejects.toThrow(
-        'Erro ao deletar garagem.',
       );
     });
   });
