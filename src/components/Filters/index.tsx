@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 import Input from '../Input';
-import Toggle from './Toggle';
+import Toggle from '../Toggle';
 
 import type { GarageFiltersProps } from './types';
 
@@ -28,7 +28,11 @@ const GarageFilters = ({ filters, onChange }: GarageFiltersProps) => {
         Filtros para garagens
       </span>
 
-      <Toggle checked={filters.isDigital} onChange={onDigitalChange} />
+      <Toggle
+        label="Mensalista Digital"
+        checked={filters.isDigital}
+        onChange={onDigitalChange}
+      />
 
       <div className="w-full h-fit md:w-64">
         <Input

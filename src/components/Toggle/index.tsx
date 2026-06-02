@@ -1,9 +1,10 @@
 type ToggleProps = {
+  label: string;
   checked: boolean;
   onChange: (value: boolean) => void;
 };
 
-const Toggle = ({ checked, onChange }: ToggleProps) => {
+const Toggle = ({ label, checked, onChange }: ToggleProps) => {
   return (
     <div className="flex items-center gap-3">
       <button
@@ -23,7 +24,7 @@ const Toggle = ({ checked, onChange }: ToggleProps) => {
         />
       </button>
       <label id="toggle-label" className="text-sm font-bold text-gray-700">
-        Mensalista Digital
+        {label}
       </label>
     </div>
   );
