@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import registerModals from './modals';
+import registerModals from './components/Modals';
 
 import AppRoutes from './routes';
 

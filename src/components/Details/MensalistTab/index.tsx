@@ -12,7 +12,7 @@ import PlansTable from '../PlansTable';
 
 import type { GarageDetails } from '../../../services/garages/types';
 
-import { MODAL_IDS } from '../../../modals';
+import { MODAL_IDS } from '../../Modals';
 
 import QrCode from '../../../assets/qrcode.svg';
 

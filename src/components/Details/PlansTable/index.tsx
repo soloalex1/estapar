@@ -3,7 +3,7 @@ import { UserGroupIcon, PencilSquareIcon } from '@heroicons/react/24/outline';
 
 import type { Plan } from '../../../services/plans/types';
 
-import { MODAL_IDS } from '../../../modals';
+import { MODAL_IDS } from '../../Modals';
 import type { ReactNode } from 'react';
 
 type PlansTableProps = {
