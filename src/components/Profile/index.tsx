@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import NiceModal from '@ebay/nice-modal-react';
 import {
   Cog6ToothIcon,
   ArrowRightStartOnRectangleIcon,
   UserIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
+
+import { MODAL_IDS } from '../Modals';
 
 import { useAuth } from '../../hooks/useAuth';
 
@@ -17,6 +20,16 @@ const Profile = () => {
     setIsMobileOpen(!isMobileOpen);
   };
 
+  const handleConfirmClick = () => {
+    NiceModal.show(MODAL_IDS.CONFIRMATION, {
+      name: 'Sair da aplicação',
+      title: 'Deseja sair da aplicação?',
+      confirmLabel: 'Sair',
+      variant: 'danger',
+      onConfirm: logout,
+    });
+  };
+
   return (
     <>
       <div className="hidden md:flex items-center justify-end gap-4">
@@ -27,7 +40,7 @@ const Profile = () => {
 
         <button
           className="inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-          onClick={logout}
+          onClick={handleConfirmClick}
         >
           <ArrowRightStartOnRectangleIcon className="w-6 h-6 text-gray-500" />
           <span className="text-gray-500">Sair</span>
@@ -54,7 +67,7 @@ const Profile = () => {
           </li>
           <li>
             <button
-              onClick={logout}
+              onClick={handleConfirmClick}
               className="w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center gap-2"
             >
               <ArrowRightStartOnRectangleIcon className="w-5 h-5 text-gray-500" />
