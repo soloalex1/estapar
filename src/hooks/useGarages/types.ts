@@ -9,7 +9,6 @@ export interface UseGaragesReturn {
   garages: Garage[];
   isLoading: boolean;
   error: string | null;
-  deleteGarage: (id: string) => void;
   pagination: {
     page: number;
     pages: number;
