@@ -52,11 +52,15 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Detalhes da garagem"
+          aria-labelledby="details-title"
           className={`fixed top-0 right-0 z-50 h-full max-h-dvh w-full md:w-[90%] overflow-y-hidden bg-white shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
+          <span id="details-title" className="sr-only">
+            Detalhes da garagem
+          </span>
+
           {isLoading && (
             <div className="flex-1 flex items-center justify-center">
               <p className="text-gray-400">Carregando...</p>
