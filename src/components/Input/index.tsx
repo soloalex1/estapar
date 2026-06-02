@@ -12,7 +12,7 @@ const Input = ({
   ...props
 }: InputProps) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 w-full">
       <label htmlFor={props.id} className={isLabelHidden ? 'sr-only' : ''}>
         {label}
       </label>
