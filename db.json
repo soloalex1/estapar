@@ -15,7 +15,6 @@
       "token": "fake-token-bruno"
     }
   ],
-
   "garages": [
     {
       "id": "1",
@@ -29,18 +28,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 67,
       "occupiedSpots": 0,
-      "availableSpots": 67,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 1463.4,
-          "totalSpots": 67,
-          "occupiedSpots": 17,
-          "availableSpots": 50,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 67
     },
     {
       "id": "2",
@@ -54,18 +42,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 22,
       "occupiedSpots": 21,
-      "availableSpots": 1,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1650.49,
-          "totalSpots": 22,
-          "occupiedSpots": 7,
-          "availableSpots": 15,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 1
     },
     {
       "id": "3",
@@ -79,27 +56,7 @@
       "branch": "FRANQUIAS E PARCERIAS",
       "totalSpots": 30,
       "occupiedSpots": 22,
-      "availableSpots": 8,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Estudante",
-          "value": 693.81,
-          "totalSpots": 15,
-          "occupiedSpots": 9,
-          "availableSpots": 6,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Empresarial",
-          "value": 1578.69,
-          "totalSpots": 15,
-          "occupiedSpots": 2,
-          "availableSpots": 13,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 8
     },
     {
       "id": "4",
@@ -113,18 +70,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 84,
       "occupiedSpots": 42,
-      "availableSpots": 42,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Executivo",
-          "value": 1279.4,
-          "totalSpots": 84,
-          "occupiedSpots": 46,
-          "availableSpots": 38,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 42
     },
     {
       "id": "5",
@@ -138,18 +84,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 59,
       "occupiedSpots": 32,
-      "availableSpots": 27,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Padrão",
-          "value": 1270.16,
-          "totalSpots": 59,
-          "occupiedSpots": 24,
-          "availableSpots": 35,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 27
     },
     {
       "id": "6",
@@ -163,27 +98,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 75,
       "occupiedSpots": 58,
-      "availableSpots": 17,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1308.34,
-          "totalSpots": 37,
-          "occupiedSpots": 30,
-          "availableSpots": 7,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Moto",
-          "value": 817.97,
-          "totalSpots": 37,
-          "occupiedSpots": 19,
-          "availableSpots": 18,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 17
     },
     {
       "id": "7",
@@ -197,36 +112,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 91,
       "occupiedSpots": 54,
-      "availableSpots": 37,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Padrão",
-          "value": 1802.19,
-          "totalSpots": 30,
-          "occupiedSpots": 16,
-          "availableSpots": 14,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Executivo",
-          "value": 808.72,
-          "totalSpots": 30,
-          "occupiedSpots": 3,
-          "availableSpots": 27,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Moto",
-          "value": 651.54,
-          "totalSpots": 30,
-          "occupiedSpots": 6,
-          "availableSpots": 24,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 37
     },
     {
       "id": "8",
@@ -240,18 +126,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 31,
       "occupiedSpots": 2,
-      "availableSpots": 29,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Estudante",
-          "value": 1251.03,
-          "totalSpots": 31,
-          "occupiedSpots": 27,
-          "availableSpots": 4,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 29
     },
     {
       "id": "9",
@@ -265,18 +140,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 20,
       "occupiedSpots": 1,
-      "availableSpots": 19,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 1579.59,
-          "totalSpots": 20,
-          "occupiedSpots": 14,
-          "availableSpots": 6,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 19
     },
     {
       "id": "10",
@@ -290,18 +154,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 39,
       "occupiedSpots": 15,
-      "availableSpots": 24,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano SUV",
-          "value": 649.33,
-          "totalSpots": 39,
-          "occupiedSpots": 38,
-          "availableSpots": 1,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 24
     },
     {
       "id": "11",
@@ -315,27 +168,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 29,
       "occupiedSpots": 24,
-      "availableSpots": 5,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1637.47,
-          "totalSpots": 14,
-          "occupiedSpots": 2,
-          "availableSpots": 12,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Estudante",
-          "value": 1681.55,
-          "totalSpots": 14,
-          "occupiedSpots": 4,
-          "availableSpots": 10,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 5
     },
     {
       "id": "12",
@@ -349,36 +182,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 100,
       "occupiedSpots": 69,
-      "availableSpots": 31,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Estudante",
-          "value": 525.76,
-          "totalSpots": 33,
-          "occupiedSpots": 14,
-          "availableSpots": 19,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Plano Rotativo",
-          "value": 1145.72,
-          "totalSpots": 33,
-          "occupiedSpots": 21,
-          "availableSpots": 12,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Rotativo",
-          "value": 1109.18,
-          "totalSpots": 33,
-          "occupiedSpots": 9,
-          "availableSpots": 24,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 31
     },
     {
       "id": "13",
@@ -392,36 +196,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 57,
       "occupiedSpots": 16,
-      "availableSpots": 41,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1208.5,
-          "totalSpots": 19,
-          "occupiedSpots": 14,
-          "availableSpots": 5,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano SUV",
-          "value": 1103.03,
-          "totalSpots": 19,
-          "occupiedSpots": 18,
-          "availableSpots": 1,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Empresarial",
-          "value": 1129.36,
-          "totalSpots": 19,
-          "occupiedSpots": 11,
-          "availableSpots": 8,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 41
     },
     {
       "id": "14",
@@ -435,27 +210,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 29,
       "occupiedSpots": 28,
-      "availableSpots": 1,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Moto",
-          "value": 1824.42,
-          "totalSpots": 14,
-          "occupiedSpots": 0,
-          "availableSpots": 14,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Padrão",
-          "value": 1314.17,
-          "totalSpots": 14,
-          "occupiedSpots": 14,
-          "availableSpots": 0,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 1
     },
     {
       "id": "15",
@@ -469,27 +224,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 85,
       "occupiedSpots": 62,
-      "availableSpots": 23,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1781.47,
-          "totalSpots": 42,
-          "occupiedSpots": 30,
-          "availableSpots": 12,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Final de Semana",
-          "value": 1819.62,
-          "totalSpots": 42,
-          "occupiedSpots": 42,
-          "availableSpots": 0,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 23
     },
     {
       "id": "16",
@@ -503,27 +238,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 79,
       "occupiedSpots": 60,
-      "availableSpots": 19,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Empresarial",
-          "value": 1202.13,
-          "totalSpots": 39,
-          "occupiedSpots": 22,
-          "availableSpots": 17,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Estudante",
-          "value": 1061.63,
-          "totalSpots": 39,
-          "occupiedSpots": 11,
-          "availableSpots": 28,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 19
     },
     {
       "id": "17",
@@ -537,27 +252,7 @@
       "branch": "FRANQUIAS E PARCERIAS",
       "totalSpots": 23,
       "occupiedSpots": 10,
-      "availableSpots": 13,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Estudante",
-          "value": 1131.53,
-          "totalSpots": 11,
-          "occupiedSpots": 4,
-          "availableSpots": 7,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano SUV",
-          "value": 1419.08,
-          "totalSpots": 11,
-          "occupiedSpots": 4,
-          "availableSpots": 7,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 13
     },
     {
       "id": "18",
@@ -571,18 +266,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 50,
       "occupiedSpots": 0,
-      "availableSpots": 50,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Padrão",
-          "value": 896.72,
-          "totalSpots": 50,
-          "occupiedSpots": 36,
-          "availableSpots": 14,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 50
     },
     {
       "id": "19",
@@ -596,18 +280,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 40,
       "occupiedSpots": 2,
-      "availableSpots": 38,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1097.53,
-          "totalSpots": 40,
-          "occupiedSpots": 3,
-          "availableSpots": 37,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 38
     },
     {
       "id": "20",
@@ -621,36 +294,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 24,
       "occupiedSpots": 23,
-      "availableSpots": 1,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Empresarial",
-          "value": 839.63,
-          "totalSpots": 8,
-          "occupiedSpots": 1,
-          "availableSpots": 7,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Final de Semana",
-          "value": 1817.78,
-          "totalSpots": 8,
-          "occupiedSpots": 3,
-          "availableSpots": 5,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Executivo",
-          "value": 1246.37,
-          "totalSpots": 8,
-          "occupiedSpots": 2,
-          "availableSpots": 6,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 1
     },
     {
       "id": "21",
@@ -664,18 +308,7 @@
       "branch": "ADMINISTRACAO E SERVICOS - SP",
       "totalSpots": 75,
       "occupiedSpots": 74,
-      "availableSpots": 1,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1565.44,
-          "totalSpots": 75,
-          "occupiedSpots": 34,
-          "availableSpots": 41,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 1
     },
     {
       "id": "22",
@@ -689,18 +322,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 99,
       "occupiedSpots": 65,
-      "availableSpots": 34,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Empresarial",
-          "value": 685.0,
-          "totalSpots": 99,
-          "occupiedSpots": 32,
-          "availableSpots": 67,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 34
     },
     {
       "id": "23",
@@ -714,27 +336,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 88,
       "occupiedSpots": 78,
-      "availableSpots": 10,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1231.99,
-          "totalSpots": 44,
-          "occupiedSpots": 7,
-          "availableSpots": 37,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Noturno",
-          "value": 1545.84,
-          "totalSpots": 44,
-          "occupiedSpots": 41,
-          "availableSpots": 3,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 10
     },
     {
       "id": "24",
@@ -748,36 +350,7 @@
       "branch": "OPERACOES INTERIOR SP",
       "totalSpots": 43,
       "occupiedSpots": 17,
-      "availableSpots": 26,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Executivo",
-          "value": 1194.51,
-          "totalSpots": 14,
-          "occupiedSpots": 13,
-          "availableSpots": 1,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Rotativo",
-          "value": 1290.14,
-          "totalSpots": 14,
-          "occupiedSpots": 12,
-          "availableSpots": 2,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Empresarial",
-          "value": 1921.51,
-          "totalSpots": 14,
-          "occupiedSpots": 3,
-          "availableSpots": 11,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 26
     },
     {
       "id": "25",
@@ -791,27 +364,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 49,
       "occupiedSpots": 41,
-      "availableSpots": 8,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1265.41,
-          "totalSpots": 24,
-          "occupiedSpots": 5,
-          "availableSpots": 19,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Estudante",
-          "value": 1253.26,
-          "totalSpots": 24,
-          "occupiedSpots": 20,
-          "availableSpots": 4,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 8
     },
     {
       "id": "26",
@@ -825,36 +378,7 @@
       "branch": "OPERACOES INTERIOR SP",
       "totalSpots": 28,
       "occupiedSpots": 11,
-      "availableSpots": 17,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Empresarial",
-          "value": 1957.34,
-          "totalSpots": 9,
-          "occupiedSpots": 2,
-          "availableSpots": 7,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Estudante",
-          "value": 518.53,
-          "totalSpots": 9,
-          "occupiedSpots": 7,
-          "availableSpots": 2,
-          "status": "inactive"
-        },
-        {
-          "id": "3",
-          "description": "Plano SUV",
-          "value": 1263.42,
-          "totalSpots": 9,
-          "occupiedSpots": 6,
-          "availableSpots": 3,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 17
     },
     {
       "id": "27",
@@ -868,27 +392,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 44,
       "occupiedSpots": 37,
-      "availableSpots": 7,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Empresarial",
-          "value": 838.76,
-          "totalSpots": 22,
-          "occupiedSpots": 7,
-          "availableSpots": 15,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Rotativo",
-          "value": 1884.92,
-          "totalSpots": 22,
-          "occupiedSpots": 8,
-          "availableSpots": 14,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 7
     },
     {
       "id": "28",
@@ -902,18 +406,7 @@
       "branch": "OPERACOES SUL",
       "totalSpots": 82,
       "occupiedSpots": 4,
-      "availableSpots": 78,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 706.06,
-          "totalSpots": 82,
-          "occupiedSpots": 15,
-          "availableSpots": 67,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 78
     },
     {
       "id": "29",
@@ -927,18 +420,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 42,
       "occupiedSpots": 13,
-      "availableSpots": 29,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 617.66,
-          "totalSpots": 42,
-          "occupiedSpots": 35,
-          "availableSpots": 7,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 29
     },
     {
       "id": "30",
@@ -952,18 +434,7 @@
       "branch": "FRANQUIAS E PARCERIAS",
       "totalSpots": 31,
       "occupiedSpots": 23,
-      "availableSpots": 8,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 939.59,
-          "totalSpots": 31,
-          "occupiedSpots": 18,
-          "availableSpots": 13,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 8
     },
     {
       "id": "31",
@@ -977,18 +448,7 @@
       "branch": "OPERACOES SUL",
       "totalSpots": 98,
       "occupiedSpots": 93,
-      "availableSpots": 5,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1732.55,
-          "totalSpots": 98,
-          "occupiedSpots": 40,
-          "availableSpots": 58,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 5
     },
     {
       "id": "32",
@@ -1002,18 +462,7 @@
       "branch": "FRANQUIAS E PARCERIAS",
       "totalSpots": 59,
       "occupiedSpots": 42,
-      "availableSpots": 17,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Estudante",
-          "value": 1549.63,
-          "totalSpots": 59,
-          "occupiedSpots": 57,
-          "availableSpots": 2,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 17
     },
     {
       "id": "33",
@@ -1027,18 +476,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 39,
       "occupiedSpots": 31,
-      "availableSpots": 8,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1244.94,
-          "totalSpots": 39,
-          "occupiedSpots": 27,
-          "availableSpots": 12,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 8
     },
     {
       "id": "34",
@@ -1052,36 +490,7 @@
       "branch": "OPERACOES INTERIOR SP",
       "totalSpots": 52,
       "occupiedSpots": 3,
-      "availableSpots": 49,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1698.2,
-          "totalSpots": 17,
-          "occupiedSpots": 0,
-          "availableSpots": 17,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Plano Executivo",
-          "value": 906.39,
-          "totalSpots": 17,
-          "occupiedSpots": 3,
-          "availableSpots": 14,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Executivo",
-          "value": 1914.72,
-          "totalSpots": 17,
-          "occupiedSpots": 14,
-          "availableSpots": 3,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 49
     },
     {
       "id": "35",
@@ -1095,18 +504,7 @@
       "branch": "FRANQUIAS E PARCERIAS",
       "totalSpots": 84,
       "occupiedSpots": 15,
-      "availableSpots": 69,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1632.15,
-          "totalSpots": 84,
-          "occupiedSpots": 0,
-          "availableSpots": 84,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 69
     },
     {
       "id": "36",
@@ -1120,18 +518,7 @@
       "branch": "ADMINISTRACAO E SERVICOS - SP",
       "totalSpots": 70,
       "occupiedSpots": 60,
-      "availableSpots": 10,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Padrão",
-          "value": 1609.39,
-          "totalSpots": 70,
-          "occupiedSpots": 34,
-          "availableSpots": 36,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 10
     },
     {
       "id": "37",
@@ -1145,36 +532,7 @@
       "branch": "FILIAL MINAS GERAIS",
       "totalSpots": 24,
       "occupiedSpots": 0,
-      "availableSpots": 24,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano SUV",
-          "value": 1114.49,
-          "totalSpots": 8,
-          "occupiedSpots": 6,
-          "availableSpots": 2,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Padrão",
-          "value": 1140.77,
-          "totalSpots": 8,
-          "occupiedSpots": 3,
-          "availableSpots": 5,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Rotativo",
-          "value": 634.9,
-          "totalSpots": 8,
-          "occupiedSpots": 6,
-          "availableSpots": 2,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 24
     },
     {
       "id": "38",
@@ -1188,27 +546,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 69,
       "occupiedSpots": 29,
-      "availableSpots": 40,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Moto",
-          "value": 768.49,
-          "totalSpots": 34,
-          "occupiedSpots": 34,
-          "availableSpots": 0,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Plano Moto",
-          "value": 746.23,
-          "totalSpots": 34,
-          "occupiedSpots": 29,
-          "availableSpots": 5,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 40
     },
     {
       "id": "39",
@@ -1222,18 +560,7 @@
       "branch": "OPERACOES CENTRO-OESTE",
       "totalSpots": 56,
       "occupiedSpots": 6,
-      "availableSpots": 50,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Padrão",
-          "value": 1139.69,
-          "totalSpots": 56,
-          "occupiedSpots": 45,
-          "availableSpots": 11,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 50
     },
     {
       "id": "40",
@@ -1247,36 +574,7 @@
       "branch": "FRANQUIAS E PARCERIAS",
       "totalSpots": 51,
       "occupiedSpots": 2,
-      "availableSpots": 49,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Executivo",
-          "value": 887.27,
-          "totalSpots": 17,
-          "occupiedSpots": 6,
-          "availableSpots": 11,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Plano Empresarial",
-          "value": 1473.94,
-          "totalSpots": 17,
-          "occupiedSpots": 4,
-          "availableSpots": 13,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Empresarial",
-          "value": 1830.84,
-          "totalSpots": 17,
-          "occupiedSpots": 8,
-          "availableSpots": 9,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 49
     },
     {
       "id": "41",
@@ -1290,18 +588,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 98,
       "occupiedSpots": 86,
-      "availableSpots": 12,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Executivo",
-          "value": 1866.63,
-          "totalSpots": 98,
-          "occupiedSpots": 69,
-          "availableSpots": 29,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 12
     },
     {
       "id": "42",
@@ -1315,27 +602,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 82,
       "occupiedSpots": 4,
-      "availableSpots": 78,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Executivo",
-          "value": 764.88,
-          "totalSpots": 41,
-          "occupiedSpots": 1,
-          "availableSpots": 40,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Final de Semana",
-          "value": 1207.34,
-          "totalSpots": 41,
-          "occupiedSpots": 28,
-          "availableSpots": 13,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 78
     },
     {
       "id": "43",
@@ -1349,27 +616,7 @@
       "branch": "OPERACOES INTERIOR SP",
       "totalSpots": 79,
       "occupiedSpots": 44,
-      "availableSpots": 35,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Estudante",
-          "value": 1042.03,
-          "totalSpots": 39,
-          "occupiedSpots": 35,
-          "availableSpots": 4,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Noturno",
-          "value": 1019.88,
-          "totalSpots": 39,
-          "occupiedSpots": 7,
-          "availableSpots": 32,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 35
     },
     {
       "id": "44",
@@ -1383,18 +630,7 @@
       "branch": "OPERACOES SUL",
       "totalSpots": 89,
       "occupiedSpots": 7,
-      "availableSpots": 82,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1968.93,
-          "totalSpots": 89,
-          "occupiedSpots": 0,
-          "availableSpots": 89,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 82
     },
     {
       "id": "45",
@@ -1408,27 +644,7 @@
       "branch": "OPERACOES INTERIOR SP",
       "totalSpots": 30,
       "occupiedSpots": 25,
-      "availableSpots": 5,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano Rotativo",
-          "value": 1508.14,
-          "totalSpots": 15,
-          "occupiedSpots": 2,
-          "availableSpots": 13,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Empresarial",
-          "value": 1713.49,
-          "totalSpots": 15,
-          "occupiedSpots": 13,
-          "availableSpots": 2,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 5
     },
     {
       "id": "46",
@@ -1442,18 +658,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 79,
       "occupiedSpots": 73,
-      "availableSpots": 6,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 930.05,
-          "totalSpots": 79,
-          "occupiedSpots": 58,
-          "availableSpots": 21,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 6
     },
     {
       "id": "47",
@@ -1467,36 +672,7 @@
       "branch": "FILIAL NORDESTE",
       "totalSpots": 70,
       "occupiedSpots": 62,
-      "availableSpots": 8,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 1765.1,
-          "totalSpots": 23,
-          "occupiedSpots": 14,
-          "availableSpots": 9,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Plano Rotativo",
-          "value": 1522.79,
-          "totalSpots": 23,
-          "occupiedSpots": 0,
-          "availableSpots": 23,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Mensalista Estudante",
-          "value": 1623.07,
-          "totalSpots": 23,
-          "occupiedSpots": 10,
-          "availableSpots": 13,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 8
     },
     {
       "id": "48",
@@ -1510,18 +686,7 @@
       "branch": "ADMINISTRACAO RIO DE JANEIRO",
       "totalSpots": 56,
       "occupiedSpots": 20,
-      "availableSpots": 36,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Plano SUV",
-          "value": 1072.44,
-          "totalSpots": 56,
-          "occupiedSpots": 48,
-          "availableSpots": 8,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 36
     },
     {
       "id": "49",
@@ -1535,36 +700,7 @@
       "branch": "ADMINISTRACAO E SERVICOS - SP",
       "totalSpots": 77,
       "occupiedSpots": 37,
-      "availableSpots": 40,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Noturno",
-          "value": 1780.16,
-          "totalSpots": 25,
-          "occupiedSpots": 1,
-          "availableSpots": 24,
-          "status": "inactive"
-        },
-        {
-          "id": "2",
-          "description": "Plano Moto",
-          "value": 1863.61,
-          "totalSpots": 25,
-          "occupiedSpots": 19,
-          "availableSpots": 6,
-          "status": "active"
-        },
-        {
-          "id": "3",
-          "description": "Plano Moto",
-          "value": 1567.75,
-          "totalSpots": 25,
-          "occupiedSpots": 4,
-          "availableSpots": 21,
-          "status": "inactive"
-        }
-      ]
+      "availableSpots": 40
     },
     {
       "id": "50",
@@ -1578,27 +714,1227 @@
       "branch": "ADMINISTRACAO E SERVICOS - SP",
       "totalSpots": 77,
       "occupiedSpots": 17,
-      "availableSpots": 60,
-      "plans": [
-        {
-          "id": "1",
-          "description": "Mensalista Final de Semana",
-          "value": 1189.4,
-          "totalSpots": 38,
-          "occupiedSpots": 24,
-          "availableSpots": 14,
-          "status": "active"
-        },
-        {
-          "id": "2",
-          "description": "Mensalista Estudante",
-          "value": 1462.69,
-          "totalSpots": 38,
-          "occupiedSpots": 20,
-          "availableSpots": 18,
-          "status": "active"
-        }
-      ]
+      "availableSpots": 60
+    }
+  ],
+  "plans": [
+    {
+      "id": "1",
+      "garageId": "1",
+      "description": "Mensalista Noturno",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 67,
+      "occupiedSpots": 17,
+      "availableSpots": 50,
+      "value": 1463.4,
+      "cancellationValue": 146.34,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-23"
+    },
+    {
+      "id": "2",
+      "garageId": "2",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 22,
+      "occupiedSpots": 7,
+      "availableSpots": 15,
+      "value": 1650.49,
+      "cancellationValue": 165.05,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-04-19"
+    },
+    {
+      "id": "3",
+      "garageId": "3",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 15,
+      "occupiedSpots": 9,
+      "availableSpots": 6,
+      "value": 693.81,
+      "cancellationValue": 69.38,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-06"
+    },
+    {
+      "id": "4",
+      "garageId": "3",
+      "description": "Plano Empresarial",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 15,
+      "occupiedSpots": 2,
+      "availableSpots": 13,
+      "value": 1578.69,
+      "cancellationValue": 157.87,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-14"
+    },
+    {
+      "id": "5",
+      "garageId": "4",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 84,
+      "occupiedSpots": 46,
+      "availableSpots": 38,
+      "value": 1279.4,
+      "cancellationValue": 127.94,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-07"
+    },
+    {
+      "id": "6",
+      "garageId": "5",
+      "description": "Mensalista Padrão",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 59,
+      "occupiedSpots": 24,
+      "availableSpots": 35,
+      "value": 1270.16,
+      "cancellationValue": 127.02,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-27"
+    },
+    {
+      "id": "7",
+      "garageId": "6",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 37,
+      "occupiedSpots": 30,
+      "availableSpots": 7,
+      "value": 1308.34,
+      "cancellationValue": 130.83,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-09"
+    },
+    {
+      "id": "8",
+      "garageId": "6",
+      "description": "Plano Moto",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 37,
+      "occupiedSpots": 19,
+      "availableSpots": 18,
+      "value": 817.97,
+      "cancellationValue": 81.8,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-10-01"
+    },
+    {
+      "id": "9",
+      "garageId": "7",
+      "description": "Mensalista Padrão",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 30,
+      "occupiedSpots": 16,
+      "availableSpots": 14,
+      "value": 1802.19,
+      "cancellationValue": 180.22,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-14"
+    },
+    {
+      "id": "10",
+      "garageId": "7",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 30,
+      "occupiedSpots": 3,
+      "availableSpots": 27,
+      "value": 808.72,
+      "cancellationValue": 80.87,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "11",
+      "garageId": "7",
+      "description": "Plano Moto",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 30,
+      "occupiedSpots": 6,
+      "availableSpots": 24,
+      "value": 651.54,
+      "cancellationValue": 65.15,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-11"
+    },
+    {
+      "id": "12",
+      "garageId": "8",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 31,
+      "occupiedSpots": 27,
+      "availableSpots": 4,
+      "value": 1251.03,
+      "cancellationValue": 125.1,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-05-14"
+    },
+    {
+      "id": "13",
+      "garageId": "9",
+      "description": "Mensalista Noturno",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 20,
+      "occupiedSpots": 14,
+      "availableSpots": 6,
+      "value": 1579.59,
+      "cancellationValue": 157.96,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-07-31"
+    },
+    {
+      "id": "14",
+      "garageId": "10",
+      "description": "Plano SUV",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 39,
+      "occupiedSpots": 38,
+      "availableSpots": 1,
+      "value": 649.33,
+      "cancellationValue": 64.93,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-22"
+    },
+    {
+      "id": "15",
+      "garageId": "11",
+      "description": "Mensalista Final de Semana",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 14,
+      "occupiedSpots": 2,
+      "availableSpots": 12,
+      "value": 1637.47,
+      "cancellationValue": 163.75,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "16",
+      "garageId": "11",
+      "description": "Mensalista Estudante",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 14,
+      "occupiedSpots": 4,
+      "availableSpots": 10,
+      "value": 1681.55,
+      "cancellationValue": 168.16,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "17",
+      "garageId": "12",
+      "description": "Mensalista Estudante",
+      "status": "inactive",
+      "vehicleType": "car",
+      "totalSpots": 33,
+      "occupiedSpots": 14,
+      "availableSpots": 19,
+      "value": 525.76,
+      "cancellationValue": 52.58,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "18",
+      "garageId": "12",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 33,
+      "occupiedSpots": 21,
+      "availableSpots": 12,
+      "value": 1145.72,
+      "cancellationValue": 114.57,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "19",
+      "garageId": "12",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 33,
+      "occupiedSpots": 9,
+      "availableSpots": 24,
+      "value": 1109.18,
+      "cancellationValue": 110.92,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-15"
+    },
+    {
+      "id": "20",
+      "garageId": "13",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 19,
+      "occupiedSpots": 14,
+      "availableSpots": 5,
+      "value": 1208.5,
+      "cancellationValue": 120.85,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-07-01"
+    },
+    {
+      "id": "21",
+      "garageId": "13",
+      "description": "Plano SUV",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 19,
+      "occupiedSpots": 18,
+      "availableSpots": 1,
+      "value": 1103.03,
+      "cancellationValue": 110.3,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-02"
+    },
+    {
+      "id": "22",
+      "garageId": "13",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 19,
+      "occupiedSpots": 11,
+      "availableSpots": 8,
+      "value": 1129.36,
+      "cancellationValue": 112.94,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-29"
+    },
+    {
+      "id": "23",
+      "garageId": "14",
+      "description": "Plano Moto",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 14,
+      "occupiedSpots": 0,
+      "availableSpots": 14,
+      "value": 1824.42,
+      "cancellationValue": 182.44,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "24",
+      "garageId": "14",
+      "description": "Mensalista Padrão",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 14,
+      "occupiedSpots": 14,
+      "availableSpots": 0,
+      "value": 1314.17,
+      "cancellationValue": 131.42,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-01-31"
+    },
+    {
+      "id": "25",
+      "garageId": "15",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 42,
+      "occupiedSpots": 30,
+      "availableSpots": 12,
+      "value": 1781.47,
+      "cancellationValue": 178.15,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-01-21"
+    },
+    {
+      "id": "26",
+      "garageId": "15",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 42,
+      "occupiedSpots": 42,
+      "availableSpots": 0,
+      "value": 1819.62,
+      "cancellationValue": 181.96,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-05-18"
+    },
+    {
+      "id": "27",
+      "garageId": "16",
+      "description": "Plano Empresarial",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 39,
+      "occupiedSpots": 22,
+      "availableSpots": 17,
+      "value": 1202.13,
+      "cancellationValue": 120.21,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-07-17"
+    },
+    {
+      "id": "28",
+      "garageId": "16",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 39,
+      "occupiedSpots": 11,
+      "availableSpots": 28,
+      "value": 1061.63,
+      "cancellationValue": 106.16,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "29",
+      "garageId": "17",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 11,
+      "occupiedSpots": 4,
+      "availableSpots": 7,
+      "value": 1131.53,
+      "cancellationValue": 113.15,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-09-22"
+    },
+    {
+      "id": "30",
+      "garageId": "17",
+      "description": "Plano SUV",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 11,
+      "occupiedSpots": 4,
+      "availableSpots": 7,
+      "value": 1419.08,
+      "cancellationValue": 141.91,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-22"
+    },
+    {
+      "id": "31",
+      "garageId": "18",
+      "description": "Mensalista Padrão",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 50,
+      "occupiedSpots": 36,
+      "availableSpots": 14,
+      "value": 896.72,
+      "cancellationValue": 89.67,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "32",
+      "garageId": "19",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 40,
+      "occupiedSpots": 3,
+      "availableSpots": 37,
+      "value": 1097.53,
+      "cancellationValue": 109.75,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "33",
+      "garageId": "20",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 8,
+      "occupiedSpots": 1,
+      "availableSpots": 7,
+      "value": 839.63,
+      "cancellationValue": 83.96,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "34",
+      "garageId": "20",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 8,
+      "occupiedSpots": 3,
+      "availableSpots": 5,
+      "value": 1817.78,
+      "cancellationValue": 181.78,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-17"
+    },
+    {
+      "id": "35",
+      "garageId": "20",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 8,
+      "occupiedSpots": 2,
+      "availableSpots": 6,
+      "value": 1246.37,
+      "cancellationValue": 124.64,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-02-16"
+    },
+    {
+      "id": "36",
+      "garageId": "21",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 75,
+      "occupiedSpots": 34,
+      "availableSpots": 41,
+      "value": 1565.44,
+      "cancellationValue": 156.54,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "37",
+      "garageId": "22",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 99,
+      "occupiedSpots": 32,
+      "availableSpots": 67,
+      "value": 685,
+      "cancellationValue": 68.5,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-05"
+    },
+    {
+      "id": "38",
+      "garageId": "23",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 44,
+      "occupiedSpots": 7,
+      "availableSpots": 37,
+      "value": 1231.99,
+      "cancellationValue": 123.2,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "39",
+      "garageId": "23",
+      "description": "Mensalista Noturno",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 44,
+      "occupiedSpots": 41,
+      "availableSpots": 3,
+      "value": 1545.84,
+      "cancellationValue": 154.58,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-13"
+    },
+    {
+      "id": "40",
+      "garageId": "24",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 14,
+      "occupiedSpots": 13,
+      "availableSpots": 1,
+      "value": 1194.51,
+      "cancellationValue": 119.45,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "41",
+      "garageId": "24",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 14,
+      "occupiedSpots": 12,
+      "availableSpots": 2,
+      "value": 1290.14,
+      "cancellationValue": 129.01,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-01-31"
+    },
+    {
+      "id": "42",
+      "garageId": "24",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 14,
+      "occupiedSpots": 3,
+      "availableSpots": 11,
+      "value": 1921.51,
+      "cancellationValue": 192.15,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "43",
+      "garageId": "25",
+      "description": "Mensalista Final de Semana",
+      "status": "inactive",
+      "vehicleType": "car",
+      "totalSpots": 24,
+      "occupiedSpots": 5,
+      "availableSpots": 19,
+      "value": 1265.41,
+      "cancellationValue": 126.54,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "44",
+      "garageId": "25",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 24,
+      "occupiedSpots": 20,
+      "availableSpots": 4,
+      "value": 1253.26,
+      "cancellationValue": 125.33,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-29"
+    },
+    {
+      "id": "45",
+      "garageId": "26",
+      "description": "Plano Empresarial",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 9,
+      "occupiedSpots": 2,
+      "availableSpots": 7,
+      "value": 1957.34,
+      "cancellationValue": 195.73,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "46",
+      "garageId": "26",
+      "description": "Mensalista Estudante",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 9,
+      "occupiedSpots": 7,
+      "availableSpots": 2,
+      "value": 518.53,
+      "cancellationValue": 51.85,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-22"
+    },
+    {
+      "id": "47",
+      "garageId": "26",
+      "description": "Plano SUV",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 9,
+      "occupiedSpots": 6,
+      "availableSpots": 3,
+      "value": 1263.42,
+      "cancellationValue": 126.34,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "48",
+      "garageId": "27",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 22,
+      "occupiedSpots": 7,
+      "availableSpots": 15,
+      "value": 838.76,
+      "cancellationValue": 83.88,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-09-26"
+    },
+    {
+      "id": "49",
+      "garageId": "27",
+      "description": "Plano Rotativo",
+      "status": "inactive",
+      "vehicleType": "car",
+      "totalSpots": 22,
+      "occupiedSpots": 8,
+      "availableSpots": 14,
+      "value": 1884.92,
+      "cancellationValue": 188.49,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "50",
+      "garageId": "28",
+      "description": "Mensalista Noturno",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 82,
+      "occupiedSpots": 15,
+      "availableSpots": 67,
+      "value": 706.06,
+      "cancellationValue": 70.61,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "51",
+      "garageId": "29",
+      "description": "Mensalista Noturno",
+      "status": "inactive",
+      "vehicleType": "car",
+      "totalSpots": 42,
+      "occupiedSpots": 35,
+      "availableSpots": 7,
+      "value": 617.66,
+      "cancellationValue": 61.77,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "52",
+      "garageId": "30",
+      "description": "Mensalista Noturno",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 31,
+      "occupiedSpots": 18,
+      "availableSpots": 13,
+      "value": 939.59,
+      "cancellationValue": 93.96,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-07-03"
+    },
+    {
+      "id": "53",
+      "garageId": "31",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 98,
+      "occupiedSpots": 40,
+      "availableSpots": 58,
+      "value": 1732.55,
+      "cancellationValue": 173.26,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-01-10"
+    },
+    {
+      "id": "54",
+      "garageId": "32",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 59,
+      "occupiedSpots": 57,
+      "availableSpots": 2,
+      "value": 1549.63,
+      "cancellationValue": 154.96,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-01-03"
+    },
+    {
+      "id": "55",
+      "garageId": "33",
+      "description": "Mensalista Final de Semana",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 39,
+      "occupiedSpots": 27,
+      "availableSpots": 12,
+      "value": 1244.94,
+      "cancellationValue": 124.49,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "56",
+      "garageId": "34",
+      "description": "Plano Rotativo",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 17,
+      "occupiedSpots": 0,
+      "availableSpots": 17,
+      "value": 1698.2,
+      "cancellationValue": 169.82,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-31"
+    },
+    {
+      "id": "57",
+      "garageId": "34",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 17,
+      "occupiedSpots": 3,
+      "availableSpots": 14,
+      "value": 906.39,
+      "cancellationValue": 90.64,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-09"
+    },
+    {
+      "id": "58",
+      "garageId": "34",
+      "description": "Plano Executivo",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 17,
+      "occupiedSpots": 14,
+      "availableSpots": 3,
+      "value": 1914.72,
+      "cancellationValue": 191.47,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-10-16"
+    },
+    {
+      "id": "59",
+      "garageId": "35",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 84,
+      "occupiedSpots": 0,
+      "availableSpots": 84,
+      "value": 1632.15,
+      "cancellationValue": 163.22,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-05-27"
+    },
+    {
+      "id": "60",
+      "garageId": "36",
+      "description": "Mensalista Padrão",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 70,
+      "occupiedSpots": 34,
+      "availableSpots": 36,
+      "value": 1609.39,
+      "cancellationValue": 160.94,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "61",
+      "garageId": "37",
+      "description": "Plano SUV",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 8,
+      "occupiedSpots": 6,
+      "availableSpots": 2,
+      "value": 1114.49,
+      "cancellationValue": 111.45,
+      "validFrom": "2026-06-02",
+      "validUntil": null
+    },
+    {
+      "id": "62",
+      "garageId": "37",
+      "description": "Mensalista Padrão",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 8,
+      "occupiedSpots": 3,
+      "availableSpots": 5,
+      "value": 1140.77,
+      "cancellationValue": 114.08,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-11"
+    },
+    {
+      "id": "63",
+      "garageId": "37",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 8,
+      "occupiedSpots": 6,
+      "availableSpots": 2,
+      "value": 634.9,
+      "cancellationValue": 63.49,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-04-17"
+    },
+    {
+      "id": "64",
+      "garageId": "38",
+      "description": "Plano Moto",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 34,
+      "occupiedSpots": 34,
+      "availableSpots": 0,
+      "value": 768.49,
+      "cancellationValue": 76.85,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-04-13"
+    },
+    {
+      "id": "65",
+      "garageId": "38",
+      "description": "Plano Moto",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 34,
+      "occupiedSpots": 29,
+      "availableSpots": 5,
+      "value": 746.23,
+      "cancellationValue": 74.62,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-27"
+    },
+    {
+      "id": "66",
+      "garageId": "39",
+      "description": "Mensalista Padrão",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 56,
+      "occupiedSpots": 45,
+      "availableSpots": 11,
+      "value": 1139.69,
+      "cancellationValue": 113.97,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-05-16"
+    },
+    {
+      "id": "67",
+      "garageId": "40",
+      "description": "Plano Executivo",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 17,
+      "occupiedSpots": 6,
+      "availableSpots": 11,
+      "value": 887.27,
+      "cancellationValue": 88.73,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-08"
+    },
+    {
+      "id": "68",
+      "garageId": "40",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 17,
+      "occupiedSpots": 4,
+      "availableSpots": 13,
+      "value": 1473.94,
+      "cancellationValue": 147.39,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-06"
+    },
+    {
+      "id": "69",
+      "garageId": "40",
+      "description": "Plano Empresarial",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 17,
+      "occupiedSpots": 8,
+      "availableSpots": 9,
+      "value": 1830.84,
+      "cancellationValue": 183.08,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-02"
+    },
+    {
+      "id": "70",
+      "garageId": "41",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 98,
+      "occupiedSpots": 69,
+      "availableSpots": 29,
+      "value": 1866.63,
+      "cancellationValue": 186.66,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-06-01"
+    },
+    {
+      "id": "71",
+      "garageId": "42",
+      "description": "Plano Executivo",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 41,
+      "occupiedSpots": 1,
+      "availableSpots": 40,
+      "value": 764.88,
+      "cancellationValue": 76.49,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-04"
+    },
+    {
+      "id": "72",
+      "garageId": "42",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 41,
+      "occupiedSpots": 28,
+      "availableSpots": 13,
+      "value": 1207.34,
+      "cancellationValue": 120.73,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-15"
+    },
+    {
+      "id": "73",
+      "garageId": "43",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 39,
+      "occupiedSpots": 35,
+      "availableSpots": 4,
+      "value": 1042.03,
+      "cancellationValue": 104.2,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-08-17"
+    },
+    {
+      "id": "74",
+      "garageId": "43",
+      "description": "Mensalista Noturno",
+      "status": "inactive",
+      "vehicleType": "car",
+      "totalSpots": 39,
+      "occupiedSpots": 7,
+      "availableSpots": 32,
+      "value": 1019.88,
+      "cancellationValue": 101.99,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-06-20"
+    },
+    {
+      "id": "75",
+      "garageId": "44",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 89,
+      "occupiedSpots": 0,
+      "availableSpots": 89,
+      "value": 1968.93,
+      "cancellationValue": 196.89,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-24"
+    },
+    {
+      "id": "76",
+      "garageId": "45",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 15,
+      "occupiedSpots": 2,
+      "availableSpots": 13,
+      "value": 1508.14,
+      "cancellationValue": 150.81,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-03-09"
+    },
+    {
+      "id": "77",
+      "garageId": "45",
+      "description": "Plano Empresarial",
+      "status": "inactive",
+      "vehicleType": "motorcycle",
+      "totalSpots": 15,
+      "occupiedSpots": 13,
+      "availableSpots": 2,
+      "value": 1713.49,
+      "cancellationValue": 171.35,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-02-03"
+    },
+    {
+      "id": "78",
+      "garageId": "46",
+      "description": "Mensalista Noturno",
+      "status": "inactive",
+      "vehicleType": "car",
+      "totalSpots": 79,
+      "occupiedSpots": 58,
+      "availableSpots": 21,
+      "value": 930.05,
+      "cancellationValue": 93.01,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-10-21"
+    },
+    {
+      "id": "79",
+      "garageId": "47",
+      "description": "Mensalista Noturno",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 23,
+      "occupiedSpots": 14,
+      "availableSpots": 9,
+      "value": 1765.1,
+      "cancellationValue": 176.51,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-09-19"
+    },
+    {
+      "id": "80",
+      "garageId": "47",
+      "description": "Plano Rotativo",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 23,
+      "occupiedSpots": 0,
+      "availableSpots": 23,
+      "value": 1522.79,
+      "cancellationValue": 152.28,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-05-09"
+    },
+    {
+      "id": "81",
+      "garageId": "47",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 23,
+      "occupiedSpots": 10,
+      "availableSpots": 13,
+      "value": 1623.07,
+      "cancellationValue": 162.31,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-09"
+    },
+    {
+      "id": "82",
+      "garageId": "48",
+      "description": "Plano SUV",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 56,
+      "occupiedSpots": 48,
+      "availableSpots": 8,
+      "value": 1072.44,
+      "cancellationValue": 107.24,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-11"
+    },
+    {
+      "id": "83",
+      "garageId": "49",
+      "description": "Mensalista Noturno",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 25,
+      "occupiedSpots": 1,
+      "availableSpots": 24,
+      "value": 1780.16,
+      "cancellationValue": 178.02,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-12-10"
+    },
+    {
+      "id": "84",
+      "garageId": "49",
+      "description": "Plano Moto",
+      "status": "active",
+      "vehicleType": "suv",
+      "totalSpots": 25,
+      "occupiedSpots": 19,
+      "availableSpots": 6,
+      "value": 1863.61,
+      "cancellationValue": 186.36,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-28"
+    },
+    {
+      "id": "85",
+      "garageId": "49",
+      "description": "Plano Moto",
+      "status": "inactive",
+      "vehicleType": "suv",
+      "totalSpots": 25,
+      "occupiedSpots": 4,
+      "availableSpots": 21,
+      "value": 1567.75,
+      "cancellationValue": 156.78,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-01-19"
+    },
+    {
+      "id": "86",
+      "garageId": "50",
+      "description": "Mensalista Final de Semana",
+      "status": "active",
+      "vehicleType": "motorcycle",
+      "totalSpots": 38,
+      "occupiedSpots": 24,
+      "availableSpots": 14,
+      "value": 1189.4,
+      "cancellationValue": 118.94,
+      "validFrom": "2026-06-02",
+      "validUntil": "2027-02-05"
+    },
+    {
+      "id": "87",
+      "garageId": "50",
+      "description": "Mensalista Estudante",
+      "status": "active",
+      "vehicleType": "car",
+      "totalSpots": 38,
+      "occupiedSpots": 20,
+      "availableSpots": 18,
+      "value": 1462.69,
+      "cancellationValue": 146.27,
+      "validFrom": "2026-06-02",
+      "validUntil": "2026-11-16"
     }
   ]
 }

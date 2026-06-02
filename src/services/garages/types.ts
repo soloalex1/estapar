@@ -1,3 +1,5 @@
+import type { Plan } from '../plans/types';
+
 export interface Garage {
   id: string;
   name: string;
@@ -10,22 +12,11 @@ export interface Garage {
 }
 
 export type GarageInsert = Omit<Garage, 'id'>;
-
-export interface GaragePlan {
-  id: string;
-  description: string;
-  value: number;
-  totalSpots: number;
-  occupiedSpots: number;
-  availableSpots: number;
-  status: 'active' | 'inactive';
-}
-
 export interface GarageDetails extends Garage {
   branch: string;
   totalSpots: number;
   occupiedSpots: number;
   availableSpots: number;
-  plans: GaragePlan[];
+  plans: Plan[];
   qrCodeUrl?: string;
 }

@@ -1,4 +1,5 @@
 import type { Garage, GarageDetails, GarageInsert } from './types';
+import type { Plan } from '../plans/types';
 
 const BASE_URL = '/api/garages';
 
@@ -48,13 +49,23 @@ export const getGarages = async ({
 };
 
 export const getGarageDetails = async (id: string): Promise<GarageDetails> => {
-  const response = await fetch(`${BASE_URL}/${id}`);
+  const [garageResponse, plansResponse] = await Promise.all([
+    fetch(`${BASE_URL}/${id}`),
+    fetch(`/api/plans?garageId=${id}`),
+  ]);
 
-  if (!response.ok) {
-    throw new Error(`Erro ao obter detalhes da garagem.`);
+  if (!garageResponse.ok) {
+    throw new Error('Erro ao obter detalhes da garagem.');
   }
 
-  return response.json();
+  if (!plansResponse.ok) {
+    throw new Error('Erro ao obter planos da garagem.');
+  }
+
+  const garage = await garageResponse.json();
+  const plans: Plan[] = await plansResponse.json();
+
+  return { ...garage, plans };
 };
 
 export const createGarage = async (garage: GarageInsert): Promise<Garage> => {
