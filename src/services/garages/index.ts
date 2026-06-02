@@ -1,4 +1,4 @@
-import type { Garage, GarageInsert } from './types';
+import type { Garage, GarageDetails, GarageInsert } from './types';
 
 const BASE_URL = '/api/garages';
 
@@ -47,7 +47,7 @@ export const getGarages = async ({
   return { data, total, pages };
 };
 
-export const getGarageById = async (id: string): Promise<Garage> => {
+export const getGarageDetails = async (id: string): Promise<GarageDetails> => {
   const response = await fetch(`${BASE_URL}/${id}`);
 
   if (!response.ok) {
