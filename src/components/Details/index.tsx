@@ -1,4 +1,4 @@
-import { useState, type PointerEvent } from 'react';
+import { useState, useEffect, type PointerEvent } from 'react';
 import { FocusTrap } from 'focus-trap-react';
 import {
   BuildingOffice2Icon,
@@ -31,6 +31,19 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
     }
   };
 
+  // disabling document body scroll when the details are open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div
@@ -53,7 +66,7 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
           role="dialog"
           aria-modal="true"
           aria-label="Detalhes da garagem"
-          className={`fixed top-0 right-0 z-50 h-full w-full md:w-[90%] bg-white shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 z-50 h-full max-h-dvh w-full md:w-[90%] overflow-y-hidden bg-white shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >

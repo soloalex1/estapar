@@ -15,14 +15,14 @@ const useGarageDetails = (id?: string): UseGarageDetailsReturn => {
   const [state, setState] = useState<GarageDetailsState>({ status: 'idle' });
 
   useEffect(() => {
-    let cancelled = false;
-
     if (!id) return;
+
+    let cancelled = false;
 
     getGarageDetails(id)
       .then((details) => {
         if (!cancelled) {
-          setState({ status: 'success', details });
+          setState({ status: 'success', details, id });
         }
       })
       .catch((err: Error) => {
@@ -36,12 +36,12 @@ const useGarageDetails = (id?: string): UseGarageDetailsReturn => {
     };
   }, [id]);
 
-  if (!id) return { details: null, isLoading: false, error: null };
+  const isStale = state.status === 'success' && state.id !== id;
 
   return {
-    details: state.status === 'success' ? state.details : null,
-    isLoading: state.status === 'idle',
-    error: state.status === 'error' ? state.message : null,
+    details: state.status === 'success' && !isStale ? state.details : null,
+    isLoading: state.status === 'idle' || isStale,
+    error: state.status === 'error' && !isStale ? state.message : null,
   };
 };
 
