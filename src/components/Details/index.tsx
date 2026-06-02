@@ -1,4 +1,4 @@
-import { useState, useEffect, type PointerEvent } from 'react';
+import { useState, type PointerEvent } from 'react';
 import { FocusTrap } from 'focus-trap-react';
 import {
   BuildingOffice2Icon,
@@ -30,19 +30,6 @@ const GarageDetails = ({ garageId, onClose }: GarageSidesheetProps) => {
       onClose();
     }
   };
-
-  // disabling document body scroll when the details are open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
 
   return (
     <>

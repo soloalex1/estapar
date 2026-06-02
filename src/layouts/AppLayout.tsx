@@ -10,11 +10,15 @@ const AppLayout = () => {
   const { isCollapsed, onToggle } = use(SidebarContext)!;
 
   return (
-    <main className="w-dvw h-fit max-h-dvh overflow-x-hidden">
+    <div className="flex w-screen h-screen overflow-hidden">
       <Sidebar collapsed={isCollapsed} onToggle={onToggle} />
-      <Header />
-      <Outlet />
-    </main>
+      <div className="flex flex-col flex-1 overflow-hidden">
+        <Header />
+        <main className="flex-1 overflow-y-auto mb-4">
+          <Outlet />
+        </main>
+      </div>
+    </div>
   );
 };
 
