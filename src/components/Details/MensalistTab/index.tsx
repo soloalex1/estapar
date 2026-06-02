@@ -14,6 +14,8 @@ import type { GarageDetails } from '../../../services/garages/types';
 
 import { MODAL_IDS } from '../../../modals';
 
+import QrCode from '../../../assets/qrcode.svg';
+
 type MensalistTabProps = {
   details: GarageDetails;
   onSuccess: () => void;
@@ -48,15 +50,13 @@ const MensalistTab = ({ details, onSuccess }: MensalistTabProps) => {
           value={details.availableSpots}
           color="green"
         />
-        {details.qrCodeUrl && (
-          <div className="border border-gray-200 rounded-lg p-3 flex items-center justify-center">
-            <img
-              src={details.qrCodeUrl}
-              alt="QR Code da garagem"
-              className="w-20 h-20"
-            />
-          </div>
-        )}
+        <div className="border border-gray-200 rounded-lg p-1 flex items-center justify-center">
+          <img
+            src={QrCode}
+            alt="QR Code da garagem"
+            className="h-24 w-24 object-contain"
+          />
+        </div>
       </section>
     );
   };
